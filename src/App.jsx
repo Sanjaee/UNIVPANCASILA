@@ -52,13 +52,26 @@ import TradisiSatu from "./pages/NkriDua/TradisiSatu";
 import TradisiDua from "./pages/NkriDua/TradisiDua";
 import TradisiTiga from "./pages/NkriDua/TradisiTiga";
 import TradisiEmpat from "./pages/NkriDua/TradisiEmpat";
+import Pancasila from "./pages/AllMainPage/Pancasila";
+import UudPage from "./pages/AllMainPage/UudPage";
+import Bhinneka from "./pages/AllMainPage/Bhinneka";
+import NkriPage from "./pages/AllMainPage/NkriPage";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Sila Satu */}
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
+        <Route path="/pancasila" element={<Pancasila />} />
+        <Route path="/undang-undang-dasar-1945" element={<UudPage />} />
+        <Route path="/bti" element={<Bhinneka />} />
+        <Route
+          path="/negara-kesatuan-republik-indonesia"
+          element={<NkriPage />}
+        />
+
+        {/* Sila Satu */}
         <Route path="/sila-satu-1" element={<MenuSilaSatu />} />
         <Route path="/sila-satu-2" element={<MenuSilaDua />} />
         <Route path="/sila-satu-3" element={<MenuSilaTiga />} />

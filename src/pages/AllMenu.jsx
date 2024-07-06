@@ -8,7 +8,7 @@ const AllMenu = () => {
     <>
       <Navbar />
       <LayoutMenu />
-      <Footer />
+      <Footer isFixed="fixed" />
     </>
   );
 };

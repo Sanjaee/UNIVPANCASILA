@@ -5,3 +5,36 @@
 * ::-webkit-scrollbar {
   display: none;
 }
+.background-1 {
+  background-image: url("/bg1.png");
+  background-size: cover;
+  background-position: center;
+  height: 2696px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
+
+.background-2 {
+  background-image: url("/bg2.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 2196px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
+.background-3 {
+  background-image: url("/bg2.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 866px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
+
+.background-4 {
+  background-image: url("/bg2.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 1866px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
