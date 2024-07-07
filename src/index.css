@@ -5,6 +5,10 @@
 * ::-webkit-scrollbar {
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .background-1 {
   background-image: url("/bg1.png");
   background-size: cover;
@@ -15,15 +19,14 @@
 
 .background-2 {
   background-image: url("/bg2.png");
-  position: relative;
+
   background-size: cover;
   background-position: center;
   height: 2196px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
 }
 .background-3 {
-  background-image: url("/bg2.png");
-  position: relative;
+  background-image: url("/bg22.png");
   background-size: cover;
   background-position: center;
   height: 866px; /* sesuai dengan tinggi gambar */
@@ -32,16 +35,26 @@
 
 .background-4 {
   background-image: url("/bg2.png");
-  position: relative;
   background-size: cover;
   background-position: center;
   height: 1866px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
 }
-.parallelogram {
-  transform: skewX(-20deg);
-}
 
-.parallelogram img {
-  transform: skewX(20deg);
+.background-5 {
+  background-image: url("/backgedung.png");
+
+  background-size: cover;
+  background-position: center;
+  height: 2196px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
+.parallelogram {
+  margin: 50px;
+  float: left;
+  width: 280px;
+  height: 200px;
+  -ms-transform: skew(20deg); /* Support untuk IE 9 */
+  -webkit-transform: skew(20deg); /* support untuk Safari */
+  transform: skew(20deg); /* default syntax */
 }

@@ -55,6 +55,7 @@ import TradisiEmpat from "./pages/NkriDua/TradisiEmpat";
 import Pancasila from "./pages/AllMainPage/Pancasila";
 import UudPage from "./pages/AllMainPage/UudPage";
 import Bhinneka from "./pages/AllMainPage/Bhinneka";
+import BeritaPage from "./pages/AllMainPage/BeritaPage";
 import NkriPage from "./pages/AllMainPage/NkriPage";
 
 const App = () => {
@@ -66,10 +67,12 @@ const App = () => {
         <Route path="/pancasila" element={<Pancasila />} />
         <Route path="/undang-undang-dasar-1945" element={<UudPage />} />
         <Route path="/bti" element={<Bhinneka />} />
+
         <Route
           path="/negara-kesatuan-republik-indonesia"
           element={<NkriPage />}
         />
+        <Route path="/berita" element={<BeritaPage />} />
 
         {/* Sila Satu */}
         <Route path="/sila-satu-1" element={<MenuSilaSatu />} />

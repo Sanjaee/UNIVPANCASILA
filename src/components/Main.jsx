@@ -1,11 +1,15 @@
 import React from "react";
 import MainDua from "./MainDua";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
     <>
-      <div className="background-1 font-bold  flex-col flex justify-start items-center  ">
+      <div
+        id="main1"
+        className="background-1 font-bold  flex-col flex justify-start items-center  "
+      >
         <div className="grid grid-cols-2 mt-40 ">
           <div className="flex items-center justify-center">
             <img
@@ -15,10 +19,13 @@ const Main = () => {
             />
           </div>
           <div className="flex items-center justify-center  px-10">
-            <p className="custom-1200:text-[20px] custom-1000:text-[14px] text-center text-[#000000]">
+            <Link
+              to="/berita"
+              className="custom-1200:text-[20px] custom-1000:text-[14px] text-center text-[#000000]"
+            >
               Peluncuran Edugame Revolusioner: Universitas Pancasila Mendorong
               Pembelajaran Interaktif dan Inovatif
-            </p>
+            </Link>
           </div>
         </div>
 
@@ -56,9 +63,9 @@ const Main = () => {
 
         <div className="grid grid-cols-2 mt-48 ">
           <div className="flex items-center justify-center">
-            <p className="custom-1200:text-[20px] custom-1000:text-[14px] text-center text-[#000000]">
-              Universitas Pancasila (UP) Melaksanakan Kegiatan Modul Kebhinekaan
-              II Bersama dengan Seluruh Mahasiswa Inbound Program Pertukaran...
+            <p className="custom-1200:text-[20px] px-10 custom-1000:text-[14px] text-center text-[#000000]">
+              Peningkatan Kapasitas SDM dalam Mengelola Desa Hambalang Menjadi
+              Desa Wisata Berbasis Alam, Religi, & Sport Tourism
             </p>
           </div>
           <div className="flex items-center justify-center ">
@@ -70,12 +77,12 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="w-full h-[419px] grid grid-cols-2  custom-1000:mt-[640px] custom-1200:mt-96 bg-black ">
+        <div className="w-full h-[419px] grid grid-cols-2  custom-1000:mt-[640px] custom-1200:mt-96 background-5 ">
           <div className="flex justify-center items-center">
             <h1 className="text-white text-7xl font-bold">Galery</h1>
           </div>
-          <div className="parallelogram-container flex justify-center items-center">
-            <img className="w-[376px]" src="./bggedung.png" alt="Gedung" />
+          <div className="parallelogram flex justify-center items-center">
+            <img className="" src="./bggedung.png" alt="Gedung" />
           </div>
         </div>
       </div>

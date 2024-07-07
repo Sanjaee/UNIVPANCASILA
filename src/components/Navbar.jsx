@@ -1,16 +1,17 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
-    <div className="custom-1000:h-16 custom-1200:h-20 custom-1200:text-[20px] px-20 shadow-lg z-50 bg-[#FF8ADE] w-full flex justify-between items-center top-0 fixed ">
+    <div className="custom-1000:h-16 custom-1200:h-20 custom-1200:text-[20px] px-20 shadow-lg z-50 bg-[#FF8ADE] w-full flex justify-between items-center top-0 fixed">
       <div className="flex items-center">
         <img className="w-16" src="LOGO.png" alt="Logo" />
         <img className="w-40 ml-2" src="LOGONAMA.png" alt="Logo Nama" />
@@ -74,9 +75,15 @@ const Navbar = () => {
               )}
             </AnimatePresence>
           </div>
-          <Link to="/" className="hover:text-blue-500 cursor-pointer">
-            Berita
-          </Link>
+          {location.pathname === "/" ? (
+            <a href="#main1" className="hover:text-blue-500 cursor-pointer">
+              Berita
+            </a>
+          ) : (
+            <Link to="/#main1" className="hover:text-blue-500 cursor-pointer">
+              Berita
+            </Link>
+          )}
         </ul>
       </div>
     </div>

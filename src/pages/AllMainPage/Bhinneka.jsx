@@ -1,12 +1,30 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import Loading from "../../components/Loading";
+import { useEffect, useState } from "react";
 
 const Bhinneka = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500); // Simulate loading time
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <>
       <Navbar />
-      <div className="mt-24 px-5 sm:px-10 flex flex-col justify-center items-center">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        className="mt-24 px-5 sm:px-10 flex flex-col justify-center items-center text-[#000000]"
+      >
         <h1 className="text-3xl font-bold  text-[#D432A7]">
           Bhinneka Tunggal Ika
         </h1>
@@ -60,9 +78,13 @@ const Bhinneka = () => {
           keharmonisan bangsa.
         </p>
         <img className="mt-16" src="./btkbg.png" alt="" />
-      </div>
+      </motion.div>
 
-      <div className="background-4 mt-24 px-10">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        className="background-2 mt-24 px-10"
+      >
         <h1 className="text-[30px] font-bold pt-20 text-white">Lagu Daerah</h1>
         <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
           <Link
@@ -205,7 +227,7 @@ const Bhinneka = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Footer />
     </>
   );
