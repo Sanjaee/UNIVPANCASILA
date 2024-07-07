@@ -38,3 +38,10 @@
   height: 1866px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
 }
+.parallelogram {
+  transform: skewX(-20deg);
+}
+
+.parallelogram img {
+  transform: skewX(20deg);
+}

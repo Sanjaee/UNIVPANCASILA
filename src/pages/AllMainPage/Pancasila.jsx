@@ -1,21 +1,45 @@
-import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Loading from "../../components/Loading";
+
 const Pancasila = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500); // Simulate loading time
+  }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <>
       <Navbar />
       <div className="mt-24 px-5 sm:px-10 flex flex-col text-[#000000] sm:flex-row sm:justify-between items-center">
         <div className="flex items-center justify-center min-w-[300px]">
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             src="./garuda.png"
-            className="max-h-[270.48px] w-full h-full max-w-[270.48px]  "
+            className="max-h-[270.48px] w-full h-full max-w-[270.48px]"
             alt="logo"
           />
         </div>
-        <div className="max-w-[866px] w-full sm:ml-10 mt-10 sm:mt-0">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="max-w-[866px] w-full sm:ml-10 mt-10 sm:mt-0"
+        >
           <h1 className="text-4xl font-bold text-[#D432A7]">Pancasila</h1>
           <div className="mt-5">
             <p className="text-sm">
@@ -25,13 +49,11 @@ const Pancasila = () => {
               pedoman kehidupan berbangsa dan bernegara bagi seluruh rakyat
               Indonesia.
             </p>
-
             <p className="mt-5 text-sm">
               Lima ideologi utama penyusun Pancasila merupakan lima sila
               Pancasila. Ideologi utama tersebut tercantum pada alinea keempat
               dalam Pembukaan Undang-Undang Dasar 1945:
             </p>
-
             <ol className="mt-5 text-sm list-decimal list-inside">
               <li>Ketuhanan yang Maha Esa</li>
               <li>Kemanusiaan yang adil dan beradab</li>
@@ -42,7 +64,6 @@ const Pancasila = () => {
               </li>
               <li>Keadilan sosial bagi seluruh rakyat Indonesia</li>
             </ol>
-
             <p className="mt-5 text-sm">
               Sekalipun terjadi perubahan isi dan urutan lima sila Pancasila
               yang berlangsung dalam beberapa tahap selama masa perumusan
@@ -50,14 +71,19 @@ const Pancasila = () => {
               sebagai hari lahirnya Pancasila
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Sila Ke-1 */}
       <div className="background-2 mt-24 px-10">
-        <h1 className="text-[30px] font-bold pt-20 text-white">
+        <motion.h1
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="text-[30px] font-bold pt-20 text-white"
+        >
           Sila Ke-1: Ketuhanan Yang Maha Esa
-        </h1>
+        </motion.h1>
         <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
           <Link
             className="  flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-lg"
@@ -88,11 +114,17 @@ const Pancasila = () => {
             <img className=" h-3" src="./arrowuud.png" alt="" />
           </Link>
         </div>
+
         {/* Sila 2 */}
         <div className="flex flex-col">
-          <h1 className="text-[30px] font-bold pt-20 text-white">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-[30px] font-bold pt-20 text-white"
+          >
             Sila Ke-2: Kemanusiaan Yang Adil Dan Beradab
-          </h1>
+          </motion.h1>
           <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
             <Link
               className="  flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-lg"
@@ -127,11 +159,16 @@ const Pancasila = () => {
           </div>
         </div>
 
-        {/* sila 3 */}
+        {/* Sila 3 */}
         <div className="flex flex-col">
-          <h1 className="text-[30px] font-bold pt-20 text-white">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-[30px] font-bold pt-20 text-white"
+          >
             Sila Ke-3: Persatuan Indonesia
-          </h1>
+          </motion.h1>
           <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
             <Link
               className="  flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-lg"
@@ -164,12 +201,17 @@ const Pancasila = () => {
           </div>
         </div>
 
-        {/* sila 4 */}
+        {/* Sila 4 */}
         <div className="flex flex-col">
-          <h1 className="text-[30px] font-bold pt-20 text-white">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-[30px] font-bold pt-20 text-white"
+          >
             Sila Ke-4: Kerakyatan Yang Dipimpin Oleh Hikmat Kebijaksanaan Dalam
             Permusyawaratan Perwakilan
-          </h1>
+          </motion.h1>
           <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
             <Link
               className="  flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-lg"
@@ -202,11 +244,16 @@ const Pancasila = () => {
           </div>
         </div>
 
-        {/* sila 5 */}
+        {/* Sila 5 */}
         <div className="flex flex-col">
-          <h1 className="text-[30px] font-bold pt-20 text-white">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="text-[30px] font-bold pt-20 text-white"
+          >
             Sila Ke-5: Keadilan Sosial Bagi Seluruh Rakyat Indonesia
-          </h1>
+          </motion.h1>
           <div className="mt-10 text-[#FF8ADE] flex ml-20 flex-col w-[538px]">
             <Link
               className="  flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-lg"

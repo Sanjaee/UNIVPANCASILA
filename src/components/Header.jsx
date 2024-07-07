@@ -2,29 +2,26 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="h-[600px] bg-[#ffffff]">
-      <div className="bg-[#FF8ADE] h-[380px]  "></div>
-      <div className="flex justify-end items-center -mt-80 px-10">
-        <div className="flex flex-col relative z-10  text-white">
-          <h1 className="text-6xl font-bold absolute -top-20 -left-56">
-            UNIVERSITAS
-          </h1>
-          <h1 className="text-6xl absolute font-bold -top-5 -left-56">
-            PANCASILA
-          </h1>
-          <div className="flex items-center absolute top-16 -left-16">
-            <div className="flex items-center ">
-              <img className=" h-[7px]" src="./garis.png" alt="" />
-              <img src="./titik.png" alt="" />
-            </div>
+    <div className="custom-1200:h-[70vh] custom-1000:h-[90vh]  w-full flex justify-center">
+      <div className="w-full h-[385px] bg-[#FF8ADE] flex items-end justify-end px-10">
+        <div className="flex items-center relative -mb-36">
+          <div className="flex flex-col absolute custom-1000:-left-52 custom-1200:-left-80  ">
+            <img
+              className="w-full -mt-20 custom-1200:-mt-20 custom-1000:w-[650px] custom-1200:w-[848px]"
+              src="./bgteks.png"
+              alt=""
+            />
+            <img
+              className="custom-1200:ml-28 custom-1000:ml-12  w-full custom-1000:w-[650px] custom-1200:w-[848px]"
+              src="./bgteks2.png"
+              alt=""
+            />
           </div>
-        </div>
-
-        <div className="relative">
-          <img className="w-[750px]" src="slider.png" alt="" />
-          <button className="bg-white border border-black absolute bottom-5 right-5  text-lg   text-black px-9 py-1 rounded-md">
-            Daftar &#10095;
-          </button>
+          <img
+            className="w-full custom-1000:w-[750px] custom-1200:w-[848px]"
+            src="./slider.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

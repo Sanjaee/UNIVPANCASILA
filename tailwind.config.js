@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      screens: {
+        "custom-1000": "1000px",
+        "custom-1200": "1200px",
+      },
     },
   },
   plugins: [],
