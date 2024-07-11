@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div
       id="top"
-      className="custom-1200:h-[70vh] custom-1000:h-[90vh]  w-full flex justify-center"
+      className="custom-1200:h-[70vh] max-w-screen-2xl custom-1000:h-[90vh]  w-full flex justify-center"
     >
       <div className="w-full h-[385px] bg-[#FF8ADE] flex items-end justify-end px-10">
         <div className="flex items-center relative -mb-36">
@@ -20,6 +20,7 @@ const Header = () => {
               alt=""
             />
           </div>
+          {/* slider */}
           <div className="w-full relative">
             <img
               className="w-full custom-1000:w-[750px] custom-1200:w-[848px]"

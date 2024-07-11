@@ -36,7 +36,7 @@ const LayoutMenuSila = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center bg-[#D432A7] p-3 shadow-2xl">
+      <div className="flex items-center justify-center bg-[#D432A7] p-3 custom-1000:mt-2 custom-1200:mt-8 shadow-2xl">
         <button
           className="text-[20px] w-full font-bold text-white"
           onClick={toggleSilaVisibility}

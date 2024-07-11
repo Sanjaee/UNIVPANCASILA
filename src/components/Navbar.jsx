@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import SearchComponent from "./SearchComponent";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,10 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="custom-1000:h-16 custom-1200:h-20 custom-1200:text-[20px] px-20 shadow-lg z-50 bg-[#FF8ADE] w-full flex justify-between items-center top-0 fixed">
+    <div className="custom-1000:h-16  custom-1200:h-20 custom-1200:text-[20px] px-20  z-50 bg-[#FF8ADE] w-full flex justify-between items-center top-0 fixed">
       <div className="flex items-center">
         <img className="w-16" src="LOGO.png" alt="Logo" />
         <img className="w-40 ml-2" src="LOGONAMA.png" alt="Logo Nama" />
+      </div>
+      <div>
+        <SearchComponent />
       </div>
       <div className="hidden sm:block">
         <ul className="flex space-x-8 text-[#FFFFFF] text-sm font-bold">

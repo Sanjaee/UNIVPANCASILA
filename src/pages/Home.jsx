@@ -5,11 +5,15 @@ import Main from "../components/Main";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <Header />
-      <Main />
-    </div>
+      <div className="w-full justify-center ">
+        <div className="w-full  flex-col flex justify-center items-center">
+          <Header />
+          <Main />
+        </div>
+      </div>
+    </>
   );
 };
 

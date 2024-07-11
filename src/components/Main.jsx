@@ -8,7 +8,7 @@ const Main = () => {
     <>
       <div
         id="main1"
-        className="background-1 font-bold  flex-col flex justify-start items-center  "
+        className="background-1 max-w-screen-2xl font-bold  flex-col flex justify-start items-center  "
       >
         <div className="grid grid-cols-2 mt-40 ">
           <div className="flex items-center justify-center">
