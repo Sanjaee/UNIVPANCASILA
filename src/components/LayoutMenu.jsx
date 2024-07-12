@@ -6,7 +6,7 @@ import LayoutMenuNkri from "./AllLayoutMenu/LayoutMenuNkri";
 const LayoutMenu = ({ children }) => {
   return (
     <div className="hidden sm:flex overflow-hidden">
-      <div className="h-full w-80 text-sm fixed z-10 bg-[#D432A7] shadow-lg pt-16 pb-44  overflow-y-auto">
+      <div className="h-full w-80 text-sm fixed z-10 bg-[#FF8ADE] shadow-lg pt-16 pb-44  overflow-y-auto">
         {/* Sila */}
         <LayoutMenuSila />
 

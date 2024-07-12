@@ -26,7 +26,7 @@ const BeritaPage = () => {
       >
         {/* grid 1 */}
         <div className="flex flex-col w-full justify-center items-center  ">
-          <h1 className="text-xl text-center font-bold text-[#D432A7]">
+          <h1 className="text-xl text-center font-bold text-[#FF8ADE]">
             Peluncuran Edugame Revolusioner: Universitas Pancasila Mendorong
             Pembelajaran Interaktif dan Inovatif
           </h1>
@@ -91,7 +91,7 @@ const BeritaPage = () => {
           <div className="border-2 boeder-[#ECECEC] w-full my-4  "></div>
           {/* berita */}
           <div className="flex flex-col w-full text-sm justify-start ">
-            <h1 className="text-xl font-bold text-[#D432A7]">Berita Lainnya</h1>
+            <h1 className="text-xl font-bold text-[#FF8ADE]">Berita Lainnya</h1>
             <div className="flex  items-center mt-7">
               <img
                 src="/berita2.png"

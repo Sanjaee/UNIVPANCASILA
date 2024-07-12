@@ -32,7 +32,7 @@ const LayoutMenuBhinneka = () => {
   };
   return (
     <>
-      <div className="flex items-center justify-center bg-[#D432A7] p-4 shadow-2xl">
+      <div className="flex items-center justify-center bg-[#FF8ADE] p-4 shadow-2xl">
         <button
           className="text-[20px] w-full font-bold text-white"
           onClick={toggleBHINNEKAVisibility}
@@ -51,7 +51,7 @@ const LayoutMenuBhinneka = () => {
             {/* Lagu */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white transition-colors"
                 onClick={() => handleButtonClick(7)}
               >
                 Lagu Daerah
@@ -114,7 +114,7 @@ const LayoutMenuBhinneka = () => {
             {/* Tarian */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(8)}
               >
                 Tarian Tradisional
@@ -177,7 +177,7 @@ const LayoutMenuBhinneka = () => {
             {/* Hasil Tambang */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(9)}
               >
                 Hasil Tambang
@@ -240,7 +240,7 @@ const LayoutMenuBhinneka = () => {
             {/* Sila Ke-4 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(10)}
               >
                 Satwa & Puspa

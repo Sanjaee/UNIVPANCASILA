@@ -12,7 +12,9 @@ const SatwaSatu = () => {
         transition={{ duration: 0.5 }}
         className="w-full text-sm pl-[350px] pr-4 overflow-y-auto h-[500px] pb-20"
       >
-        <h1 className="text-2xl text-[#D432A7] font-bold text-center">Anoa</h1>
+        <h1 className="text-2xl custom-1200:mt-10 text-[#FF8ADE] font-bold text-center">
+          Anoa
+        </h1>
         <p className="mt-5">
           Anoa (Bubalus sp.), atau kerbau kenit, merupakan kerbau endemik yang
           secara alami berhabitat di daratan Pulau Sulawesi dan Pulau Buton.

@@ -12,14 +12,14 @@ const TambangEmpat = () => {
         transition={{ duration: 0.5 }}
         className="w-full text-sm pl-[350px] pr-4 overflow-y-auto h-[500px] pb-20"
       >
-        <h1 className="text-2xl text-[#D432A7] font-bold text-center">
+        <h1 className="text-2xl custom-1200:mt-10 text-[#FF8ADE] font-bold text-center">
           Tambang Besi
         </h1>
         <p className="mt-5">
           Tambang besi adalah lokasi eksploitasi atau penambangan bijih besi
           yang merupakan sumber daya alam penting untuk produksi logam besi.
           Bijih besi diperoleh melalui proses penambangan dan pengolahan untuk
-          diolah menjadi bahan baku utama dalam industri besi dan baja. Contoh
+          diolah menjadi bahan baku utama dalam industri besi dan baja.Contoh
           tambang besi di Indonesia meliputi:
         </p>
         <ol className="mt-5 list-decimal list-inside">

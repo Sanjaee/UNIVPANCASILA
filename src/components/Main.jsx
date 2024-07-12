@@ -1,93 +1,75 @@
 import React from "react";
 import MainDua from "./MainDua";
-import Footer from "./Footer";
-import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
     <>
-      <div
-        id="main1"
-        className="background-1 max-w-screen-2xl font-bold  flex-col flex justify-start items-center  "
-      >
-        <div className="grid grid-cols-2 mt-40 ">
-          <div className="flex items-center justify-center">
-            <img
-              className="custom-1200:w-[507px] custom-1000:w-[407px]"
-              src="./berita1.png"
-              alt=""
-            />
-          </div>
-          <div className="flex items-center justify-center  px-10">
-            <Link
-              to="/berita"
-              className="custom-1200:text-[20px] custom-1000:text-[14px] text-center text-[#000000]"
-            >
-              Peluncuran Edugame Revolusioner: Universitas Pancasila Mendorong
-              Pembelajaran Interaktif dan Inovatif
-            </Link>
-          </div>
+      <div className="relative hidden   mt-[500px] mb-[500px] background-1  w-full max-w-screen-2xl lg:flex flex-col justify-center items-center">
+        {/* 1 */}
+        <div className="custom-1200:w-[507px] custom-1000:w-[400px]  absolute custom-1200:-top-32 custom-1000:-top-20 custom-1200:-left-60 custom-1000:-left-32">
+          <img
+            className="object-cover rounded-3xl custom-1200:w-[507px] custom-1000:w-[400px] "
+            src="./berita1.png"
+            alt=""
+          />
+          <p className="mt-5 font-semibold text-[#000000] text-[15px]">
+            Peluncuran Edugame Revolusioner
+          </p>
+          <p className="mt-2 text-[#FF35C7] font-semibold text-[15px]">
+            Universitas Pancasila mendorong pembelajaran innovative dan
+            interactive
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 mt-48 ">
-          <div className="flex items-center justify-center">
-            <p className="custom-1200:text-[20px]  custom-1000:text-[14px] text-center px-10 text-[#000000]">
-              Universitas Pancasila (UP) Melaksanakan Kegiatan Modul Kebhinekaan
-              II Bersama dengan Seluruh Mahasiswa Inbound Program Pertukaran...
-            </p>
-          </div>
-          <div className="flex items-center justify-center ">
-            <img
-              className="custom-1200:w-[507px] custom-1000:w-[407px]"
-              src="./bgmain2.png"
-              alt=""
-            />
-          </div>
+        {/* 2 */}
+        <div className="custom-1200:w-[507px] custom-1000:w-[400px] absolute  custom-1200:top-[200px] custom-1000:top-[220px] custom-1200:-right-60 custom-1000:-right-32 ">
+          <img
+            className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px] "
+            src="./berita2.png"
+            alt=""
+          />
+          <p className="mt-5 font-semibold text-[#000000] text-[15px]">
+            Peluncuran Edugame Revolusioner
+          </p>
+          <p className="mt-2 text-[#FF35C7] font-semibold text-[15px]">
+            Universitas Pancasila mendorong pembelajaran innovative dan
+            interactive
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 mt-48 ">
-          <div className="flex items-center justify-center">
-            <img
-              className="custom-1200:w-[507px] custom-1000:w-[407px]"
-              src="./bgmain3.png"
-              alt=""
-            />
-          </div>
-          <div className="flex items-center justify-center ">
-            <p className="custom-1200:text-[20px] px-10 custom-1000:text-[14px] text-center text-[#000000]">
-              Pelepasan 140 Mahasiswa Program MSIB Batch VI & Pembekalan Studi
-              Lanjut
-            </p>
-          </div>
+        {/* 3 */}
+        <div className="custom-1200:w-[507px] custom-1000:w-[400px]  absolute top-[550px] custom-1200:-left-60 custom-1000:-left-32">
+          <img
+            className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px] "
+            src="./berita3.png"
+            alt=""
+          />
+          <p className="mt-5 font-semibold text-[#000000] text-[15px]">
+            Peluncuran Edugame Revolusioner
+          </p>
+          <p className="mt-2 text-[#FF35C7] font-semibold text-[15px]">
+            Universitas Pancasila mendorong pembelajaran innovative dan
+            interactive
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 mt-48 ">
-          <div className="flex items-center justify-center">
-            <p className="custom-1200:text-[20px] px-10 custom-1000:text-[14px] text-center text-[#000000]">
-              Peningkatan Kapasitas SDM dalam Mengelola Desa Hambalang Menjadi
-              Desa Wisata Berbasis Alam, Religi, & Sport Tourism
-            </p>
-          </div>
-          <div className="flex items-center justify-center ">
-            <img
-              className="custom-1200:w-[507px] custom-1000:w-[407px]"
-              src="./bgmain4.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className="w-full h-[419px] grid grid-cols-2  custom-1000:mt-[640px] custom-1200:mt-96 background-5 ">
-          <div className="flex justify-center items-center">
-            <h1 className="text-white text-7xl font-bold">Galery</h1>
-          </div>
-          <div className="parallelogram flex justify-center items-center">
-            <img className="" src="./bggedung.png" alt="Gedung" />
-          </div>
+        {/* 4 */}
+        <div className="custom-1200:w-[507px] custom-1000:w-[400px]  absolute top-[890px] custom-1200:-right-60 custom-1000:-right-32">
+          <img
+            className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px] "
+            src="./berita4.png"
+            alt=""
+          />
+          <p className="mt-5 font-semibold text-[#000000] text-[15px]">
+            Peluncuran Edugame Revolusioner
+          </p>
+          <p className="mt-2 text-[#FF35C7] font-semibold text-[15px]">
+            Universitas Pancasila mendorong pembelajaran innovative dan
+            interactive
+          </p>
         </div>
       </div>
       <MainDua />
-      <Footer />
     </>
   );
 };

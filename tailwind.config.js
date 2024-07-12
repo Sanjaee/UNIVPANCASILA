@@ -8,6 +8,7 @@ export default {
       },
       screens: {
         "custom-1000": "1000px",
+        "custom-1100": "1100px",
         "custom-1200": "1200px",
       },
     },

@@ -20,13 +20,20 @@ function SearchComponent() {
 
   return (
     <div className="w-full relative">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleChange}
-        className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
+      <div className="relative w-full max-w-[172px]">
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleChange}
+          className="w-full  py-2 pl-8 border bg-transparent text-white placeholder:text-white font-bold custom-1200:text-[20px] custom-1000:text-[16px] border-[#FFFFFF] rounded-lg focus:outline-none"
+        />
+        <img
+          src="./kcinput.png"
+          alt="Search"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 w-5 h-5"
+        />
+      </div>
       {searchResults.length > 0 && (
         <ul className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
           {searchResults.map((item, index) => (

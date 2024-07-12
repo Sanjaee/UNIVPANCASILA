@@ -32,7 +32,7 @@ const LayoutMenuUud = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center bg-[#D432A7] p-3 shadow-2xl">
+      <div className="flex items-center justify-center bg-[#FF8ADE] p-3 shadow-2xl">
         <button
           className="text-[20px] w-full font-bold text-white"
           onClick={toggleUUDVisibility}
@@ -51,7 +51,7 @@ const LayoutMenuUud = () => {
             {/* UUD 1 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white transition-colors"
                 onClick={() => handleButtonClick(5)}
               >
                 Lembaga Negara
@@ -114,7 +114,7 @@ const LayoutMenuUud = () => {
             {/* UUD 2 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(6)}
               >
                 Bahasa Daerah

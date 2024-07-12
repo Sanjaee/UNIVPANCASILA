@@ -12,16 +12,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="custom-1000:h-16  custom-1200:h-20 custom-1200:text-[20px] px-20  z-50 bg-[#FF8ADE] w-full flex justify-between items-center top-0 fixed">
+    <div className="custom-1000:h-16   custom-1200:h-24 custom-1200:text-[20px] px-20  z-50 bg-[#FF8ADE] w-full lg:flex hidden justify-between items-center top-0 fixed">
       <div className="flex items-center">
-        <img className="w-16" src="LOGO.png" alt="Logo" />
-        <img className="w-40 ml-2" src="LOGONAMA.png" alt="Logo Nama" />
+        <img
+          className="custom-1200:w-16 custom-1000:w-10"
+          src="LOGO.png"
+          alt="Logo"
+        />
+        <img
+          className="custom-1200:w-40 custom-1000:w-40 ml-2"
+          src="LOGONAMA.png"
+          alt="Logo Nama"
+        />
       </div>
-      <div>
-        <SearchComponent />
-      </div>
-      <div className="hidden sm:block">
-        <ul className="flex space-x-8 text-[#FFFFFF] text-sm font-bold">
+
+      <div className="flex items-center">
+        <ul className="flex space-x-8 text-[#FFFFFF] custom-1200:text-[20px] custom-1000:text-sm font-semibold">
           <Link to="/" className="hover:text-blue-500 cursor-pointer">
             Beranda
           </Link>
@@ -45,7 +51,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/pancasila"
-                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#D432A7] transition duration-200"
+                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200"
                       >
                         Pancasila
                       </Link>
@@ -53,7 +59,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/undang-undang-dasar-1945"
-                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#D432A7] transition duration-200"
+                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200"
                       >
                         UUD 1945
                       </Link>
@@ -61,7 +67,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/bti"
-                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#D432A7] transition duration-200"
+                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200"
                       >
                         Bhinneka Tunggal Ika
                       </Link>
@@ -69,7 +75,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         to="/negara-kesatuan-republik-indonesia"
-                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#D432A7] transition duration-200"
+                        className="block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200"
                       >
                         NKRI
                       </Link>
@@ -89,6 +95,9 @@ const Navbar = () => {
             </Link>
           )}
         </ul>
+        <div className="ml-8">
+          <SearchComponent />
+        </div>
       </div>
     </div>
   );

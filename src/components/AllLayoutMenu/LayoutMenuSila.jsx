@@ -36,7 +36,7 @@ const LayoutMenuSila = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center bg-[#D432A7] p-3 custom-1000:mt-2 custom-1200:mt-8 shadow-2xl">
+      <div className="flex items-center justify-center bg-[#FF8ADE] p-3 custom-1000:mt-2 custom-1200:mt-8 shadow-2xl">
         <button
           className="text-[20px] w-full font-bold text-white"
           onClick={toggleSilaVisibility}
@@ -55,7 +55,7 @@ const LayoutMenuSila = () => {
             {/* Sila Ke-1 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white transition-colors"
                 onClick={() => handleButtonClick(0)}
               >
                 Sila Ke-1: Ketuhanan Yang Maha Esa
@@ -118,7 +118,7 @@ const LayoutMenuSila = () => {
             {/* Sila Ke-2 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(1)}
               >
                 Sila Ke-2: Kemanusiaan yang Adil dan Beradab
@@ -181,7 +181,7 @@ const LayoutMenuSila = () => {
             {/* Sila Ke-3 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(2)}
               >
                 Sila Ke-3: Persatuan Indonesia
@@ -244,7 +244,7 @@ const LayoutMenuSila = () => {
             {/* Sila Ke-4 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(3)}
               >
                 Sila Ke-4: Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan
@@ -308,7 +308,7 @@ const LayoutMenuSila = () => {
             {/* Sila Ke-5 */}
             <div>
               <button
-                className="w-full text-left py-3 px-6 bg-[#D432A7] text-white line-clamp-1 whitespace-nowrap transition-colors"
+                className="w-full text-left py-3 px-6 bg-[#FF8ADE] text-white line-clamp-1 whitespace-nowrap transition-colors"
                 onClick={() => handleButtonClick(4)}
               >
                 Sila Ke-5: Keadilan Sosial Bagi Seluruh Rakyat Indonesia

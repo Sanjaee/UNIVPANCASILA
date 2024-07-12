@@ -13,7 +13,7 @@ const MenuSilaDua = () => {
         transition={{ duration: 0.5 }}
         className="w-full text-sm pl-[350px] pr-4"
       >
-        <h1 className="text-2xl text-[#D432A7] font-bold text-center">
+        <h1 className="text-2xl custom-1200:mt-10 text-[#FF8ADE] font-bold text-center">
           Tidak Paksakan Kepercayaan
         </h1>
         <p className="mt-5">

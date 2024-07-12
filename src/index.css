@@ -8,59 +8,18 @@
 html {
   scroll-behavior: smooth;
 }
-/* body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .background-1 {
-  background-image: url("/bg1.png");
+  background-image: url("/bgbaru.png");
   background-size: cover;
   background-position: center;
-  height: 2696px; /* sesuai dengan tinggi gambar */
-  width: 100%; /* sesuai dengan lebar gambar */
+  height: 883px; /* sesuai dengan tinggi gambar */
+  width: 693px; /* sesuai dengan lebar gambar */
 }
-
 .background-2 {
-  background-image: url("/bg2.png");
-
+  background-image: url("/bgberanda2.png");
   background-size: cover;
   background-position: center;
-  height: 2196px; /* sesuai dengan tinggi gambar */
+  height: 128px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
-}
-.background-3 {
-  background-image: url("/bg22.png");
-  background-size: cover;
-  background-position: center;
-  height: 866px; /* sesuai dengan tinggi gambar */
-  width: 100%; /* sesuai dengan lebar gambar */
-}
-
-.background-4 {
-  background-image: url("/bg2.png");
-  background-size: cover;
-  background-position: center;
-  height: 1866px; /* sesuai dengan tinggi gambar */
-  width: 100%; /* sesuai dengan lebar gambar */
-}
-
-.background-5 {
-  background-image: url("/backgedung.png");
-
-  background-size: cover;
-  background-position: center;
-  height: 2196px; /* sesuai dengan tinggi gambar */
-  width: 100%; /* sesuai dengan lebar gambar */
-}
-.parallelogram {
-  margin: 50px;
-  float: left;
-  width: 280px;
-  height: 200px;
-  -ms-transform: skew(20deg); /* Support untuk IE 9 */
-  -webkit-transform: skew(20deg); /* support untuk Safari */
-  transform: skew(20deg); /* default syntax */
 }
