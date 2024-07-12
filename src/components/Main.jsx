@@ -1,12 +1,19 @@
 import React from "react";
 import MainDua from "./MainDua";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
     <>
-      <div className="relative hidden   mt-[500px] mb-[500px] background-1  w-full max-w-screen-2xl lg:flex flex-col justify-center items-center">
+      <div
+        id="main1"
+        className="relative hidden   mt-[500px] mb-[500px] background-1  w-full max-w-screen-2xl lg:flex flex-col justify-center items-center"
+      >
         {/* 1 */}
-        <div className="custom-1200:w-[507px] custom-1000:w-[400px]  absolute custom-1200:-top-32 custom-1000:-top-20 custom-1200:-left-60 custom-1000:-left-32">
+        <Link
+          to="/berita"
+          className="custom-1200:w-[507px] custom-1000:w-[400px]  absolute custom-1200:-top-32 custom-1000:-top-20 custom-1200:-left-60 custom-1000:-left-32"
+        >
           <img
             className="object-cover rounded-3xl custom-1200:w-[507px] custom-1000:w-[400px] "
             src="./berita1.png"
@@ -19,7 +26,7 @@ const Main = () => {
             Universitas Pancasila mendorong pembelajaran innovative dan
             interactive
           </p>
-        </div>
+        </Link>
 
         {/* 2 */}
         <div className="custom-1200:w-[507px] custom-1000:w-[400px] absolute  custom-1200:top-[200px] custom-1000:top-[220px] custom-1200:-right-60 custom-1000:-right-32 ">

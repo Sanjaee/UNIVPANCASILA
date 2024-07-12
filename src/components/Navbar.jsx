@@ -28,9 +28,15 @@ const Navbar = () => {
 
       <div className="flex items-center">
         <ul className="flex space-x-8 text-[#FFFFFF] custom-1200:text-[20px] custom-1000:text-sm font-semibold">
-          <Link to="/" className="hover:text-blue-500 cursor-pointer">
-            Beranda
-          </Link>
+          {location.pathname === "/" ? (
+            <a href="#main1" className="hover:text-blue-500 cursor-pointer">
+              Beranda
+            </a>
+          ) : (
+            <Link to="/#main1" className="hover:text-blue-500 cursor-pointer">
+              Beranda
+            </Link>
+          )}
           <div className="relative">
             <button
               onClick={toggleDropdown}
