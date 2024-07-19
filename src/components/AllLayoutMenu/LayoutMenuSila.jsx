@@ -9,15 +9,15 @@ const LayoutMenuSila = () => {
 
   useEffect(() => {
     // Check the pathname and set the active menu based on it
-    if (location.pathname.startsWith("/sila-satu")) {
+    if (location.pathname.startsWith("/detail-satu")) {
       setActiveMenu(0);
-    } else if (location.pathname.startsWith("/sila-dua")) {
+    } else if (location.pathname.startsWith("/detail-dua")) {
       setActiveMenu(1);
-    } else if (location.pathname.startsWith("/sila-tiga")) {
+    } else if (location.pathname.startsWith("/detail-tiga")) {
       setActiveMenu(2);
-    } else if (location.pathname.startsWith("/sila-empat")) {
+    } else if (location.pathname.startsWith("/detail-empat")) {
       setActiveMenu(3);
-    } else if (location.pathname.startsWith("/sila-lima")) {
+    } else if (location.pathname.startsWith("/detail-lima")) {
       setActiveMenu(4);
     } else {
       setActiveMenu(null);
@@ -71,41 +71,41 @@ const LayoutMenuSila = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-satu-1"
+                          location.pathname === "/detail-satu-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-satu-1"
+                        to="/detail-satu-1"
                       >
                         Menghormati Antar Agama
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-satu-2"
+                          location.pathname === "/detail-satu-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-satu-2"
+                        to="/detail-satu-2"
                       >
                         Tidak Paksakan Kepercayaan
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-satu-3"
+                          location.pathname === "/detail-satu-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-satu-3"
+                        to="/detail-satu-3"
                       >
                         Taat Beribadah
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-satu-4"
+                          location.pathname === "/detail-satu-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-satu-4"
+                        to="/detail-satu-4"
                       >
                         Hidup Sederhana
                       </Link>
@@ -134,41 +134,41 @@ const LayoutMenuSila = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-dua-1"
+                          location.pathname === "/detail-dua-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-dua-1"
+                        to="/detail-dua-1"
                       >
                         Menjunjung Tinggi Nilai Kemanusiaan
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-dua-2"
+                          location.pathname === "/detail-dua-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-dua-2"
+                        to="/detail-dua-2"
                       >
                         Gemar Melakukan Kegiatan Kemanusiaan
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-dua-3"
+                          location.pathname === "/detail-dua-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-dua-3"
+                        to="/detail-dua-3"
                       >
                         Tenggang Rasa dan Tepa Selira
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-dua-4"
+                          location.pathname === "/detail-dua-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-dua-4"
+                        to="/detail-dua-4"
                       >
                         Saling Tolong Menolong
                       </Link>
@@ -197,41 +197,41 @@ const LayoutMenuSila = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-tiga-1"
+                          location.pathname === "/detail-tiga-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-tiga-1"
+                        to="/detail-tiga-1"
                       >
                         Cinta Tanah Air dan Bangsa
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-tiga-2"
+                          location.pathname === "/detail-tiga-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-tiga-2"
+                        to="/detail-tiga-2"
                       >
                         Bangga Sebagai Bangsa Indonesia
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-tiga-3"
+                          location.pathname === "/detail-tiga-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-tiga-3"
+                        to="/detail-tiga-3"
                       >
                         Berkorban untuk Bangsa dan Negara
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-tiga-4"
+                          location.pathname === "/detail-tiga-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-tiga-4"
+                        to="/detail-tiga-4"
                       >
                         Jaga Persatuan dan Kesatuan Bangsa
                       </Link>
@@ -261,41 +261,41 @@ const LayoutMenuSila = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-empat-1"
+                          location.pathname === "/detail-empat-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-empat-1"
+                        to="/detail-empat-1"
                       >
                         Hormati Hasil Musyawarah
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-empat-2"
+                          location.pathname === "/detail-empat-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-empat-2"
+                        to="/detail-empat-2"
                       >
                         Menjunjung Nilai Kebenaran
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-empat-3"
+                          location.pathname === "/detail-empat-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-empat-3"
+                        to="/detail-empat-3"
                       >
                         Musyawarah dan Mufakat
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-empat-4"
+                          location.pathname === "/detail-empat-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-empat-4"
+                        to="/detail-empat-4"
                       >
                         Tidak Paksakan Kehendak
                       </Link>
@@ -324,41 +324,41 @@ const LayoutMenuSila = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-lima-1"
+                          location.pathname === "/detail-lima-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-lima-1"
+                        to="/detail-lima-1"
                       >
                         Adil Terhadap Sesama
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-lima-2"
+                          location.pathname === "/detail-lima-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-lima-2"
+                        to="/detail-lima-2"
                       >
                         Hormati Hak Orang Lain
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-lima-3"
+                          location.pathname === "/detail-lima-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-lima-3"
+                        to="/detail-lima-3"
                       >
                         Seimbang Hak dan Kewajiban
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/sila-lima-4"
+                          location.pathname === "/detail-lima-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/sila-lima-4"
+                        to="/detail-lima-4"
                       >
                         Bekerja Keras
                       </Link>

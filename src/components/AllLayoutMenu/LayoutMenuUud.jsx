@@ -11,9 +11,9 @@ const LayoutMenuUud = () => {
 
   useEffect(() => {
     // Check the pathname and set the active menu based on it
-    if (location.pathname.startsWith("/uud")) {
+    if (location.pathname.startsWith("/detail-enam")) {
       setActiveMenu(5);
-    } else if (location.pathname.startsWith("/bahasa")) {
+    } else if (location.pathname.startsWith("/detail-tujuh")) {
       setActiveMenu(6);
     } else {
       setActiveMenu(null);
@@ -67,41 +67,41 @@ const LayoutMenuUud = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/uud-1"
+                          location.pathname === "/detail-enam-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/uud-1"
+                        to="/detail-enam-1"
                       >
                         BPK (Badan Pengawas Keuangan)
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/uud-2"
+                          location.pathname === "/detail-enam-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/uud-2"
+                        to="/detail-enam-2"
                       >
                         Mahkamah Konstitusi
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/uud-3"
+                          location.pathname === "/detail-enam-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/uud-3"
+                        to="/detail-enam-3"
                       >
                         Komisi Yudisial
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/uud-4"
+                          location.pathname === "/detail-enam-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/uud-4"
+                        to="/detail-enam-4"
                       >
                         MPR/DPR
                       </Link>
@@ -130,41 +130,41 @@ const LayoutMenuUud = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/bahasa-1"
+                          location.pathname === "/detail-tujuh-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/bahasa-1"
+                        to="/detail-tujuh-1"
                       >
                         Bahasa Keyeli
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/bahasa-2"
+                          location.pathname === "/detail-tujuh-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/bahasa-2"
+                        to="/detail-tujuh-2"
                       >
                         Bahasa Melayu
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/bahasa-3"
+                          location.pathname === "/detail-tujuh-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/bahasa-3"
+                        to="/detail-tujuh-3"
                       >
                         Bahasa Minang
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/bahasa-4"
+                          location.pathname === "/detail-tujuh-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/bahasa-4"
+                        to="/detail-tujuh-4"
                       >
                         Bahasa Bugis
                       </Link>

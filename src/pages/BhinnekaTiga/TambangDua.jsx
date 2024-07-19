@@ -10,7 +10,7 @@ const TambangDua = () => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full text-sm pl-[350px] pr-4 overflow-y-auto h-[500px] pb-20"
+        className="w-full text-sm sm:pl-[350px] custom-300:pl-4 pr-4 overflow-y-auto h-[500px] pb-20"
       >
         <h1 className="text-2xl custom-1200:mt-10 text-[#FF8ADE] font-bold text-center">
           Tambang Nikel

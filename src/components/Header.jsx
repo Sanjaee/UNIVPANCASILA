@@ -1,23 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Header = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:8000/api/beranda");
+        setData(response.data);
+      } catch (error) {
+        console.error("Failed to fetch data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
-    <div className="bg-[#FF8ADE] lg:flex mt-16 w-full  max-w-screen-2xl h-full custom-1200:h-[424px] custom-1000:h-[324px]  justify-end px-10 hidden">
-      <div className="flex flex-col z-20 custom-1200:mt-40  -mr-40 custom-1000:mt-20">
-        <img src="./td1.png" alt="" />
+    <>
+      {/* Desktop */}
+      <div
+        id="main1"
+        className={`bg-[#FF8ADE] lg:flex mt-16 w-full max-w-screen-2xl h-full custom-1200:h-[424px] custom-1000:h-[324px] justify-end px-10 hidden`}
+      >
+        <div className="flex flex-col z-20 custom-1200:mt-40 -mr-40 custom-1000:mt-20">
+          <img src={data.gambar_teks_slider} alt="" />
+        </div>
+        <div className="w-full max-w-[915px] h-full max-h-[516px] relative">
+          <img className="object-cover" src={data.gambar_slider} alt="" />
+        </div>
       </div>
-      <div className=" w-full max-w-[915px] h-full max-h-[516px] bg-slate-200  relative">
-        <img className="object-cover" src="./tdslider.png" alt="" />
-        <a
-          className="absolute custom-1200:-bottom-16 custom-1200:right-10 custom-1100:-bottom-20 custom-1100:right-5 custom-1000:-bottom-10 custom-1000:right-5  custom-1200:px-10 custom-1200:py-2 custom-1000:px-5 custom-1000:py-1 custom-1200:text-[25px] custom-1000:text-[20px] border border-black rounded-lg  bg-white "
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Daftar &#10095;
-        </a>
+
+      {/* Mobile */}
+      <div
+        id="main1"
+        className={`bg-[#FF8ADE] lg:hidden mt-14 w-full max-w-screen-2xl  custom-500:h-[220px] custom-400:h-[150px] custom-300:h-[130px]  justify-end px-4 flex`}
+      >
+        <div className="flex flex-col z-20  -mr-40 mt-5">
+          <img src={data.gambar_teks_slider} alt="" />
+        </div>
+        <div className="w-[915px] h-[516px] relative">
+          <img className="object-cover " src={data.gambar_slider} alt="" />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

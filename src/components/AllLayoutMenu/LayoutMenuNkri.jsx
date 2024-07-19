@@ -9,9 +9,9 @@ const LayoutMenuNkri = () => {
 
   useEffect(() => {
     // Check the pathname and set the active menu based on it
-    if (location.pathname.startsWith("/kuliner")) {
+    if (location.pathname.startsWith("/detail-12")) {
       setActiveMenu(11);
-    } else if (location.pathname.startsWith("/tradisi")) {
+    } else if (location.pathname.startsWith("/detail-13")) {
       setActiveMenu(12);
     } else {
       setActiveMenu(null);
@@ -63,41 +63,41 @@ const LayoutMenuNkri = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/kuliner-1"
+                          location.pathname === "/detail-12-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/kuliner-1"
+                        to="/detail-12-1"
                       >
                         Rendang
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/kuliner-2"
+                          location.pathname === "/detail-12-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/kuliner-2"
+                        to="/detail-12-2"
                       >
                         Karedok
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/kuliner-3"
+                          location.pathname === "/detail-12-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/kuliner-3"
+                        to="/detail-12-3"
                       >
                         Kerak Telor
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/kuliner-4"
+                          location.pathname === "/detail-12-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/kuliner-4"
+                        to="/detail-12-4"
                       >
                         Empal Gentong
                       </Link>
@@ -126,41 +126,41 @@ const LayoutMenuNkri = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tradisi-1"
+                          location.pathname === "/detail-13-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tradisi-1"
+                        to="/detail-13-1"
                       >
                         Fahombo Batu
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tradisi-2"
+                          location.pathname === "/detail-13-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tradisi-2"
+                        to="/detail-13-2"
                       >
                         Manafo
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tradisi-3"
+                          location.pathname === "/detail-13-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tradisi-3"
+                        to="/detail-13-3"
                       >
                         Famato Harimau
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tradisi-4"
+                          location.pathname === "/detail-13-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tradisi-4"
+                        to="/detail-13-4"
                       >
                         Ya’ahowu Festival
                       </Link>

@@ -57,6 +57,13 @@ import UudPage from "./pages/AllMainPage/UudPage";
 import Bhinneka from "./pages/AllMainPage/Bhinneka";
 import BeritaPage from "./pages/AllMainPage/BeritaPage";
 import NkriPage from "./pages/AllMainPage/NkriPage";
+import KontenSatuForm from "./pages/backend/konten/KontenSatuForm";
+import BerandaForm from "./pages/backend/beranda/BerandaForm";
+import NavbarForm from "./pages/backend/navbar/NavbarForm";
+import KontenDuaForm from "./pages/backend/konten/KontenDuaForm";
+import KontenTigaForm from "./pages/backend/konten/KontenTigaForm";
+import KontenEmpatForm from "./pages/backend/konten/KontenEmpatForm";
+import BeritaForm from "./pages/backend/berita/BeritaForm";
 
 const App = () => {
   return (
@@ -64,90 +71,96 @@ const App = () => {
       <Routes>
         {/* Main Pages */}
         <Route path="/" element={<Home />} />
-        <Route path="/pancasila" element={<Pancasila />} />
-        <Route path="/undang-undang-dasar-1945" element={<UudPage />} />
-        <Route path="/bti" element={<Bhinneka />} />
+        <Route path="/konten-satu" element={<Pancasila />} />
+        <Route path="/konten-dua" element={<UudPage />} />
+        <Route path="/konten-tiga" element={<Bhinneka />} />
 
-        <Route
-          path="/negara-kesatuan-republik-indonesia"
-          element={<NkriPage />}
-        />
+        <Route path="/konten-empat" element={<NkriPage />} />
         <Route path="/berita" element={<BeritaPage />} />
 
         {/* Sila Satu */}
-        <Route path="/sila-satu-1" element={<MenuSilaSatu />} />
-        <Route path="/sila-satu-2" element={<MenuSilaDua />} />
-        <Route path="/sila-satu-3" element={<MenuSilaTiga />} />
-        <Route path="/sila-satu-4" element={<MenuSilaEmpat />} />
+        <Route path="/detail-satu-1" element={<MenuSilaSatu />} />
+        <Route path="/detail-satu-2" element={<MenuSilaDua />} />
+        <Route path="/detail-satu-3" element={<MenuSilaTiga />} />
+        <Route path="/detail-satu-4" element={<MenuSilaEmpat />} />
 
         {/* Sila Dua */}
-        <Route path="/sila-dua-1" element={<SilaDuaSatu />} />
-        <Route path="/sila-dua-2" element={<SilaDuaDua />} />
-        <Route path="/sila-dua-3" element={<SilaDuaTiga />} />
-        <Route path="/sila-dua-4" element={<SilaDuaEmpat />} />
+        <Route path="/detail-dua-1" element={<SilaDuaSatu />} />
+        <Route path="/detail-dua-2" element={<SilaDuaDua />} />
+        <Route path="/detail-dua-3" element={<SilaDuaTiga />} />
+        <Route path="/detail-dua-4" element={<SilaDuaEmpat />} />
         {/* Sila Tiga */}
-        <Route path="/sila-tiga-1" element={<SilaTigaSatu />} />
-        <Route path="/sila-tiga-2" element={<SilaTigaDua />} />
-        <Route path="/sila-tiga-3" element={<SilaTigaTiga />} />
-        <Route path="/sila-tiga-4" element={<SilaTigaEmpat />} />
+        <Route path="/detail-tiga-1" element={<SilaTigaSatu />} />
+        <Route path="/detail-tiga-2" element={<SilaTigaDua />} />
+        <Route path="/detail-tiga-3" element={<SilaTigaTiga />} />
+        <Route path="/detail-tiga-4" element={<SilaTigaEmpat />} />
         {/* Sila Empat */}
-        <Route path="/sila-empat-1" element={<SilaEmpatSatu />} />
-        <Route path="/sila-empat-2" element={<SilaEmpatDua />} />
-        <Route path="/sila-empat-3" element={<SilaEmpatTiga />} />
-        <Route path="/sila-empat-4" element={<SilaEmpatEmpat />} />
+        <Route path="/detail-empat-1" element={<SilaEmpatSatu />} />
+        <Route path="/detail-empat-2" element={<SilaEmpatDua />} />
+        <Route path="/detail-empat-3" element={<SilaEmpatTiga />} />
+        <Route path="/detail-empat-4" element={<SilaEmpatEmpat />} />
 
         {/* Sila Lima */}
-        <Route path="/sila-lima-1" element={<SilaLimaSatu />} />
-        <Route path="/sila-lima-2" element={<SilaLimaDua />} />
-        <Route path="/sila-lima-3" element={<SilaLimaTiga />} />
-        <Route path="/sila-lima-4" element={<SilaLimaEmpat />} />
+        <Route path="/detail-lima-1" element={<SilaLimaSatu />} />
+        <Route path="/detail-lima-2" element={<SilaLimaDua />} />
+        <Route path="/detail-lima-3" element={<SilaLimaTiga />} />
+        <Route path="/detail-lima-4" element={<SilaLimaEmpat />} />
         {/* UUD */}
-        <Route path="/uud-1" element={<UudSatu />} />
-        <Route path="/uud-2" element={<UudDua />} />
-        <Route path="/uud-3" element={<UudTiga />} />
-        <Route path="/uud-4" element={<UudEmpat />} />
+        <Route path="/detail-enam-1" element={<UudSatu />} />
+        <Route path="/detail-enam-2" element={<UudDua />} />
+        <Route path="/detail-enam-3" element={<UudTiga />} />
+        <Route path="/detail-enam-4" element={<UudEmpat />} />
 
         {/* UUD 2 */}
-        <Route path="/bahasa-1" element={<UudDuaSatu />} />
-        <Route path="/bahasa-2" element={<UudDuaDua />} />
-        <Route path="/bahasa-3" element={<UudDuaTiga />} />
-        <Route path="/bahasa-4" element={<UudDuaEmpat />} />
+        <Route path="/detail-tujuh-1" element={<UudDuaSatu />} />
+        <Route path="/detail-tujuh-2" element={<UudDuaDua />} />
+        <Route path="/detail-tujuh-3" element={<UudDuaTiga />} />
+        <Route path="/detail-tujuh-4" element={<UudDuaEmpat />} />
 
         {/* Bhineka 1 */}
-        <Route path="/lagu-1" element={<LaguSatu />} />
-        <Route path="/lagu-2" element={<LaguDua />} />
-        <Route path="/lagu-3" element={<LaguTiga />} />
-        <Route path="/lagu-4" element={<LaguEmpat />} />
+        <Route path="/detail-delapan-1" element={<LaguSatu />} />
+        <Route path="/detail-delapan-2" element={<LaguDua />} />
+        <Route path="/detail-delapan-3" element={<LaguTiga />} />
+        <Route path="/detail-delapan-4" element={<LaguEmpat />} />
 
         {/* Bhineka 2 */}
-        <Route path="/tarian-1" element={<TarianSatu />} />
-        <Route path="/tarian-2" element={<TarianDua />} />
-        <Route path="/tarian-3" element={<TarianTiga />} />
-        <Route path="/tarian-4" element={<TarianEmpat />} />
+        <Route path="/detail-sembilan-1" element={<TarianSatu />} />
+        <Route path="/detail-sembilan-2" element={<TarianDua />} />
+        <Route path="/detail-sembilan-3" element={<TarianTiga />} />
+        <Route path="/detail-sembilan-4" element={<TarianEmpat />} />
 
         {/* Bhineka 3 */}
-        <Route path="/tambang-1" element={<TambangSatu />} />
-        <Route path="/tambang-2" element={<TambangDua />} />
-        <Route path="/tambang-3" element={<TambangTiga />} />
-        <Route path="/tambang-4" element={<TambangEmpat />} />
+        <Route path="/detail-sepuluh-1" element={<TambangSatu />} />
+        <Route path="/detail-sepuluh-2" element={<TambangDua />} />
+        <Route path="/detail-sepuluh-3" element={<TambangTiga />} />
+        <Route path="/detail-sepuluh-4" element={<TambangEmpat />} />
 
         {/* Bhineka 4 */}
-        <Route path="/satwa-1" element={<SatwaSatu />} />
-        <Route path="/satwa-2" element={<SatwaDua />} />
-        <Route path="/satwa-3" element={<SatwaTiga />} />
-        <Route path="/satwa-4" element={<SatwaEmpat />} />
+        <Route path="/detail-sebelas-1" element={<SatwaSatu />} />
+        <Route path="/detail-sebelas-2" element={<SatwaDua />} />
+        <Route path="/detail-sebelas-3" element={<SatwaTiga />} />
+        <Route path="/detail-sebelas-4" element={<SatwaEmpat />} />
 
         {/* NKRI 1 */}
-        <Route path="/kuliner-1" element={<KulinerSatu />} />
-        <Route path="/kuliner-2" element={<KulinerDua />} />
-        <Route path="/kuliner-3" element={<KulinerTiga />} />
-        <Route path="/kuliner-4" element={<KulinerEmpat />} />
+        <Route path="/detail-12-1" element={<KulinerSatu />} />
+        <Route path="/detail-12-2" element={<KulinerDua />} />
+        <Route path="/detail-12-3" element={<KulinerTiga />} />
+        <Route path="/detail-12-4" element={<KulinerEmpat />} />
 
         {/* NKRI 2 */}
-        <Route path="/tradisi-1" element={<TradisiSatu />} />
-        <Route path="/tradisi-2" element={<TradisiDua />} />
-        <Route path="/tradisi-3" element={<TradisiTiga />} />
-        <Route path="/tradisi-4" element={<TradisiEmpat />} />
+        <Route path="/detail-13-1" element={<TradisiSatu />} />
+        <Route path="/detail-13-2" element={<TradisiDua />} />
+        <Route path="/detail-13-3" element={<TradisiTiga />} />
+        <Route path="/detail-13-4" element={<TradisiEmpat />} />
+
+        {/* backend */}
+        <Route path="/backend/navbar" element={<NavbarForm />} />
+        <Route path="/backend/beranda" element={<BerandaForm />} />
+        <Route path="/backend/konten-satu" element={<KontenSatuForm />} />
+        <Route path="/backend/konten-dua" element={<KontenDuaForm />} />
+        <Route path="/backend/konten-tiga" element={<KontenTigaForm />} />
+        <Route path="/backend/konten-empat" element={<KontenEmpatForm />} />
+        <Route path="/backend/berita" element={<BeritaForm />} />
       </Routes>
     </BrowserRouter>
   );

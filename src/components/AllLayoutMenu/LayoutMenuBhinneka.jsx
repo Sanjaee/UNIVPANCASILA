@@ -8,13 +8,13 @@ const LayoutMenuBhinneka = () => {
 
   useEffect(() => {
     // Check the pathname and set the active menu based on it
-    if (location.pathname.startsWith("/lagu")) {
+    if (location.pathname.startsWith("/detail-delapan")) {
       setActiveMenu(7);
-    } else if (location.pathname.startsWith("/tarian")) {
+    } else if (location.pathname.startsWith("/detail-sembilan")) {
       setActiveMenu(8);
-    } else if (location.pathname.startsWith("/tambang")) {
+    } else if (location.pathname.startsWith("/detail-sepuluh")) {
       setActiveMenu(9);
-    } else if (location.pathname.startsWith("/satwa")) {
+    } else if (location.pathname.startsWith("/detail-sebelas")) {
       setActiveMenu(10);
     } else {
       setActiveMenu(null);
@@ -67,41 +67,41 @@ const LayoutMenuBhinneka = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/lagu-1"
+                          location.pathname === "/detail-delapan-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/lagu-1"
+                        to="/detail-delapan-1"
                       >
                         Kicir Kicir
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/lagu-2"
+                          location.pathname === "/detail-delapan-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/lagu-2"
+                        to="/detail-delapan-2"
                       >
                         Cublak Cublak Suweng
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/lagu-3"
+                          location.pathname === "/detail-delapan-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/lagu-3"
+                        to="/detail-delapan-3"
                       >
                         Anging Mammirik
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/lagu-4"
+                          location.pathname === "/detail-delapan-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/lagu-4"
+                        to="/detail-delapan-4"
                       >
                         Yamko Rambe Yamko
                       </Link>
@@ -130,41 +130,41 @@ const LayoutMenuBhinneka = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tarian-1"
+                          location.pathname === "/detail-sembilan-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tarian-1"
+                        to="/detail-sembilan-1"
                       >
                         Bedaya Ketawang
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tarian-2"
+                          location.pathname === "/detail-sembilan-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tarian-2"
+                        to="/detail-sembilan-2"
                       >
                         Jaipongan
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tarian-3"
+                          location.pathname === "/detail-sembilan-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tarian-3"
+                        to="/detail-sembilan-3"
                       >
                         Kecak
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tarian-4"
+                          location.pathname === "/detail-sembilan-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tarian-4"
+                        to="/detail-sembilan-4"
                       >
                         Kipas Pakarena
                       </Link>
@@ -193,41 +193,41 @@ const LayoutMenuBhinneka = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tambang-1"
+                          location.pathname === "/detail-sepuluh-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tambang-1"
+                        to="/detail-sepuluh-1"
                       >
                         Tambang Emas
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tambang-2"
+                          location.pathname === "/detail-sepuluh-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tambang-2"
+                        to="/detail-sepuluh-2"
                       >
                         Tambang Nikel
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tambang-3"
+                          location.pathname === "/detail-sepuluh-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tambang-3"
+                        to="/detail-sepuluh-3"
                       >
                         Tambang Timah
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/tambang-4"
+                          location.pathname === "/detail-sepuluh-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/tambang-4"
+                        to="/detail-sepuluh-4"
                       >
                         Tambang Besi
                       </Link>
@@ -256,41 +256,41 @@ const LayoutMenuBhinneka = () => {
                     <div className="flex flex-col bg-white">
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/satwa-1"
+                          location.pathname === "/detail-sebelas-1"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/satwa-1"
+                        to="/detail-sebelas-1"
                       >
                         Anoa
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/satwa-2"
+                          location.pathname === "/detail-sebelas-2"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/satwa-2"
+                        to="/detail-sebelas-2"
                       >
                         Orang Utan
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/satwa-3"
+                          location.pathname === "/detail-sebelas-3"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/satwa-3"
+                        to="/detail-sebelas-3"
                       >
                         Anggrek
                       </Link>
                       <Link
                         className={`block py-2 px-4 ${
-                          location.pathname === "/satwa-4"
+                          location.pathname === "/detail-sebelas-4"
                             ? "bg-[#FFCEF1]"
                             : "hover:bg-[#FFCEF1]"
                         } transition-colors`}
-                        to="/satwa-4"
+                        to="/detail-sebelas-4"
                       >
                         Rafflesia Arnoldi
                       </Link>

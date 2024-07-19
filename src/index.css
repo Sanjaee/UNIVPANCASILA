@@ -19,6 +19,7 @@ html {
 .background-2 {
   background-image: url("/bgberanda2.png");
   background-size: cover;
+  
   background-position: center;
   height: 128px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
