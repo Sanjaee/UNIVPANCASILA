@@ -61,7 +61,7 @@ const Bhinneka = () => {
           <img
             className="mt-16 w-full h-full max-h-[200px] object-cover"
             src={data.image}
-            alt=""
+             alt="bg"
           />
         </div>
       </motion.div>
@@ -77,28 +77,28 @@ const Bhinneka = () => {
                 to="/detail-delapan-1"
               >
                 <p className="text-[20px]">Kicir Kicir</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-2"
               >
                 <p className="text-[20px]">Cublak Cublak Suweng</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-3"
               >
                 <p className="text-[20px]">Anging Mammirik</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-4"
               >
                 <p className="text-[20px]">Yamko Rambe Yamko</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -114,28 +114,28 @@ const Bhinneka = () => {
                 to="/detail-sembilan-1"
               >
                 <p className="text-[20px]">Bedaya Ketawang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-2"
               >
                 <p className="text-[20px]">Jaipongan</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-3"
               >
                 <p className="text-[20px]">Kecak</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-4"
               >
                 <p className="text-[20px]">Kipas Pakarena</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -151,28 +151,28 @@ const Bhinneka = () => {
                 to="/detail-sepuluh-1"
               >
                 <p className="text-[20px]">Tambang Emas</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-2"
               >
                 <p className="text-[20px]">Tambang Nikel</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-3"
               >
                 <p className="text-[20px]">Tambang Timah</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-4"
               >
                 <p className="text-[20px]">Tambang Besi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -188,28 +188,28 @@ const Bhinneka = () => {
                 to="/detail-sebelas-1"
               >
                 <p className="text-[20px]">Anoa</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-2"
               >
                 <p className="text-[20px]">Orang Utan</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-3"
               >
                 <p className="text-[20px]">Anggrek</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-4"
               >
                 <p className="text-[20px]">Rafflesia Arnoldi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -229,28 +229,28 @@ const Bhinneka = () => {
                 to="/detail-delapan-1"
               >
                 <p className="text-[20px]">Kicir Kicir</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-2"
               >
                 <p className="text-[20px]">Cublak Cublak Suweng</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-3"
               >
                 <p className="text-[20px]">Anging Mammirik</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-delapan-4"
               >
                 <p className="text-[20px]">Yamko Rambe Yamko</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -266,28 +266,28 @@ const Bhinneka = () => {
                 to="/detail-sembilan-1"
               >
                 <p className="text-[20px]">Bedaya Ketawang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-2"
               >
                 <p className="text-[20px]">Jaipongan</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-3"
               >
                 <p className="text-[20px]">Kecak</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sembilan-4"
               >
                 <p className="text-[20px]">Kipas Pakarena</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -303,28 +303,28 @@ const Bhinneka = () => {
                 to="/detail-sepuluh-1"
               >
                 <p className="text-[20px]">Tambang Emas</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-2"
               >
                 <p className="text-[20px]">Tambang Nikel</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-3"
               >
                 <p className="text-[20px]">Tambang Timah</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sepuluh-4"
               >
                 <p className="text-[20px]">Tambang Besi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>
@@ -340,28 +340,28 @@ const Bhinneka = () => {
                 to="/detail-sebelas-1"
               >
                 <p className="text-[20px]">Anoa</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-2"
               >
                 <p className="text-[20px]">Orang Utan</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-3"
               >
                 <p className="text-[20px]">Anggrek</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-sebelas-4"
               >
                 <p className="text-[20px]">Rafflesia Arnoldi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png"  alt="bg" />
               </Link>
             </div>
           </div>

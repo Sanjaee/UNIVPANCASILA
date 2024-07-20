@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import NavbarBE from "../NavbarBE";
+import { useLogin } from "../useLogin";
 
 const BeritaForm = () => {
+  useLogin();
   const [data, setData] = useState({
     title_berita_satu: "",
     title_berita_dua: "",
@@ -73,31 +76,541 @@ const BeritaForm = () => {
   };
 
   return (
-    <div className="container mx-auto p-8 bg-white rounded shadow-md">
-      <h2 className="text-2xl font-semibold mb-6">Update Berita</h2>
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {Object.keys(data).map((key) => (
-          key !== 'id' && (
-            <div key={key}>
-              <label className="block text-gray-700 capitalize">{key.replace(/_/g, " ")}</label>
-              <input
-                type="text"
-                name={key}
-                value={data[key]}
-                onChange={handleChange}
-                className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          )
-        ))}
-        <button
-          type="submit"
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          Update
-        </button>
-      </form>
-    </div>
+    <>
+      <NavbarBE />
+      <div className="px-4   lg:p-8 mt-24   bg-white rounded shadow-md">
+        <h2 className="text-2xl font-semibold mb-6">Update Berita</h2>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              1. Title Berita Satu
+            </label>
+            <input
+              type="text"
+              name="title_berita_satu"
+              value={data.title_berita_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              2. Title Berita Dua
+            </label>
+            <input
+              type="text"
+              name="title_berita_dua"
+              value={data.title_berita_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              3. Image Berita
+            </label>
+            <input
+              type="text"
+              name="image_berita"
+              value={data.image_berita}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.image_berita} alt="bg" />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Title Satu
+            </label>
+            <input
+              type="text"
+              name="title_satu"
+              value={data.title_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Deskripsi Satu
+            </label>
+            <input
+              type="text"
+              name="deskripsi_satu"
+              value={data.deskripsi_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              {" "}
+              Title Dua
+            </label>
+            <input
+              type="text"
+              name="title_dua"
+              value={data.title_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Deskripsi Dua
+            </label>
+            <input
+              type="text"
+              name="deskripsi_dua"
+              value={data.deskripsi_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Title Tiga
+            </label>
+            <input
+              type="text"
+              name="title_tiga"
+              value={data.title_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Deskripsi Tiga
+            </label>
+            <input
+              type="text"
+              name="deskripsi_tiga"
+              value={data.deskripsi_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Title Empat
+            </label>
+            <input
+              type="text"
+              name="title_empat"
+              value={data.title_empat}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Deskripsi Empat
+            </label>
+            <input
+              type="text"
+              name="deskripsi_empat"
+              value={data.deskripsi_empat}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Title Lima
+            </label>
+            <input
+              type="text"
+              name="title_lima"
+              value={data.title_lima}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Deskripsi Lima
+            </label>
+            <input
+              type="text"
+              name="deskripsi_lima"
+              value={data.deskripsi_lima}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Image Satu
+            </label>
+            <input
+              type="text"
+              name="karir_image_satu"
+              value={data.karir_image_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.karir_image_satu} alt="bg" />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Title Satu
+            </label>
+            <input
+              type="text"
+              name="karir_title_satu"
+              value={data.karir_title_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Deskripsi Satu
+            </label>
+            <input
+              type="text"
+              name="karir_deskripsi_satu"
+              value={data.karir_deskripsi_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Image Dua
+            </label>
+            <input
+              type="text"
+              name="karir_image_dua"
+              value={data.karir_image_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.karir_image_dua} alt="bg" />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Title Dua
+            </label>
+            <input
+              type="text"
+              name="karir_title_dua"
+              value={data.karir_title_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Deskripsi Dua
+            </label>
+            <input
+              type="text"
+              name="karir_deskripsi_dua"
+              value={data.karir_deskripsi_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Image Tiga
+            </label>
+            <input
+              type="text"
+              name="karir_image_tiga"
+              value={data.karir_image_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.karir_image_tiga} alt="bg" />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Title Tiga
+            </label>
+            <input
+              type="text"
+              name="karir_title_tiga"
+              value={data.karir_title_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Karir Deskripsi Tiga
+            </label>
+            <input
+              type="text"
+              name="karir_deskripsi_tiga"
+              value={data.karir_deskripsi_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Image Satu
+            </label>
+            <input
+              type="text"
+              name="penghargaan_image_satu"
+              value={data.penghargaan_image_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img
+              className="border w-80"
+              src={data.penghargaan_image_satu}
+              alt="bg"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Title Satu
+            </label>
+            <input
+              type="text"
+              name="penghargaan_title_satu"
+              value={data.penghargaan_title_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Deskripsi Satu
+            </label>
+            <input
+              type="text"
+              name="penghargaan_deskripsi_satu"
+              value={data.penghargaan_deskripsi_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Image Dua
+            </label>
+            <input
+              type="text"
+              name="penghargaan_image_dua"
+              value={data.penghargaan_image_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img
+              className="border w-80"
+              src={data.penghargaan_image_dua}
+              alt="bg"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Title Dua
+            </label>
+            <input
+              type="text"
+              name="penghargaan_title_dua"
+              value={data.penghargaan_title_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Deskripsi Dua
+            </label>
+            <input
+              type="text"
+              name="penghargaan_deskripsi_dua"
+              value={data.penghargaan_deskripsi_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Image Tiga
+            </label>
+            <input
+              type="text"
+              name="penghargaan_image_tiga"
+              value={data.penghargaan_image_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img
+              className="border w-80"
+              src={data.penghargaan_image_tiga}
+              alt="bg"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Title Tiga
+            </label>
+            <input
+              type="text"
+              name="penghargaan_title_tiga"
+              value={data.penghargaan_title_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Penghargaan Deskripsi Tiga
+            </label>
+            <input
+              type="text"
+              name="penghargaan_deskripsi_tiga"
+              value={data.penghargaan_deskripsi_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Image Satu
+            </label>
+            <input
+              type="text"
+              name="berita_image_satu"
+              value={data.berita_image_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img
+              className="border w-80"
+              src={data.berita_image_satu}
+              alt="bg"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Title Satu
+            </label>
+            <input
+              type="text"
+              name="berita_title_satu"
+              value={data.berita_title_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Deskripsi Satu
+            </label>
+            <input
+              type="text"
+              name="berita_deskripsi_satu"
+              value={data.berita_deskripsi_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Image Dua
+            </label>
+            <input
+              type="text"
+              name="berita_image_dua"
+              value={data.berita_image_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.berita_image_dua} alt="bg" />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Title Dua
+            </label>
+            <input
+              type="text"
+              name="berita_title_dua"
+              value={data.berita_title_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Deskripsi Dua
+            </label>
+            <input
+              type="text"
+              name="berita_deskripsi_dua"
+              value={data.berita_deskripsi_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Image Tiga
+            </label>
+            <input
+              type="text"
+              name="berita_image_tiga"
+              value={data.berita_image_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img
+              className="border w-80"
+              src={data.berita_image_tiga}
+              alt="bg"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Title Tiga
+            </label>
+            <input
+              type="text"
+              name="berita_title_tiga"
+              value={data.berita_title_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block font-bold text-gray-700 capitalize">
+              Berita Deskripsi Tiga
+            </label>
+            <input
+              type="text"
+              name="berita_deskripsi_tiga"
+              value={data.berita_deskripsi_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <button
+            type="submit"
+            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Update
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

@@ -97,28 +97,28 @@ const UudPage = () => {
                 to="/detail-enam-1"
               >
                 <p className="text-[20px]">BPK (Badan Pengawas Keuangan)</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-2"
               >
                 <p className="text-[20px]">Mahkamah Konstitusi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-3"
               >
                 <p className="text-[20px]">Komisi Yudisial</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-4"
               >
                 <p className="text-[20px]">MPR/DPR</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
             </div>
           </div>
@@ -134,28 +134,28 @@ const UudPage = () => {
                 to="/detail-tujuh-1"
               >
                 <p className="text-[20px]">Bahasa Melayu</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-2"
               >
                 <p className="text-[20px]">Bahasa Keyeli</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-3"
               >
                 <p className="text-[20px]">Bahasa Minang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-4"
               >
                 <p className="text-[20px]">Bahasa Bugis</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
             </div>
           </div>
@@ -228,28 +228,28 @@ const UudPage = () => {
                 to="/detail-enam-1"
               >
                 <p className="text-[20px]">BPK (Badan Pengawas Keuangan)</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-2"
               >
                 <p className="text-[20px]">Mahkamah Konstitusi</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-3"
               >
                 <p className="text-[20px]">Komisi Yudisial</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-enam-4"
               >
                 <p className="text-[20px]">MPR/DPR</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
             </div>
           </div>
@@ -265,28 +265,28 @@ const UudPage = () => {
                 to="/detail-tujuh-1"
               >
                 <p className="text-[20px]">Bahasa Melayu</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-2"
               >
                 <p className="text-[20px]">Bahasa Keyeli</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-3"
               >
                 <p className="text-[20px]">Bahasa Minang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tujuh-4"
               >
                 <p className="text-[20px]">Bahasa Bugis</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg"/>
               </Link>
             </div>
           </div>

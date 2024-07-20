@@ -77,28 +77,28 @@ const NkriPage = () => {
                 to="/detail-12-1"
               >
                 <p className="text-[20px]">Rendang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-2"
               >
                 <p className="text-[20px]">Karedok</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-3"
               >
                 <p className="text-[20px]">Kerak Telor</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-4"
               >
                 <p className="text-[20px]">Empal Gentong</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
             </div>
           </div>
@@ -114,28 +114,28 @@ const NkriPage = () => {
                 to="/detail-13-1"
               >
                 <p className="text-[20px]">Fahombo Batu</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-2"
               >
                 <p className="text-[20px]">Manafo</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-3"
               >
                 <p className="text-[20px]">Famato Harimau</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-4"
               >
                 <p className="text-[20px]">Ya ahowu Festival</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
             </div>
           </div>
@@ -189,28 +189,28 @@ const NkriPage = () => {
                 to="/detail-12-1"
               >
                 <p className="text-[20px]">Rendang</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-2"
               >
                 <p className="text-[20px]">Karedok</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-3"
               >
                 <p className="text-[20px]">Kerak Telor</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-12-4"
               >
                 <p className="text-[20px]">Empal Gentong</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
             </div>
           </div>
@@ -226,28 +226,28 @@ const NkriPage = () => {
                 to="/detail-13-1"
               >
                 <p className="text-[20px]">Fahombo Batu</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-2"
               >
                 <p className="text-[20px]">Manafo</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-3"
               >
                 <p className="text-[20px]">Famato Harimau</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-13-4"
               >
                 <p className="text-[20px]">Ya ahowu Festival</p>
-                <img className=" h-3" src="./arrow.png" alt="" />
+                <img className=" h-3" src="./arrow.png" alt="bg" />
               </Link>
             </div>
           </div>

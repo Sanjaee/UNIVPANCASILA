@@ -159,18 +159,18 @@ const Navbar = () => {
 
       {/* Mobile */}
       <div className="lg:hidden flex justify-between items-center fixed top-0 h-14 z-50 bg-[#FF8ADE] w-full px-4">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img className="w-10" src={navbarData.logo_satu} alt="Logo" />
           <img
             className=" w-32 ml-2"
             src={navbarData.logo_dua}
             alt="Logo Nama"
           />
-        </div>
+        </Link>
 
         <div className="flex items-center">
           <button onClick={toggleSearch}>
-            <img className="w-6 mr-2" src="./kcinput.png" alt="" />
+            <img className="w-6 mr-2" src="./kcinput.png" alt="bg" />
           </button>
           <AnimatePresence>
             {isSearchOpen && (
@@ -194,7 +194,7 @@ const Navbar = () => {
             )}
           </AnimatePresence>
           <button onClick={toggleSidebar}>
-            <img className="w-10" src="./hamburger.png" alt="" />
+            <img className="w-10" src="./hamburger.png" alt="bg" />
           </button>
           <AnimatePresence>
             {isSidebarOpen && (
@@ -285,21 +285,12 @@ const Navbar = () => {
                         </AnimatePresence>
                       </li>
                       <li>
-                        {location.pathname === "/" ? (
-                          <a
-                            href="#main2"
-                            className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
-                          >
-                            Berita
-                          </a>
-                        ) : (
-                          <Link
-                            to="/#main2"
-                            className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
-                          >
-                            Berita
-                          </Link>
-                        )}
+                        <Link
+                          to="/berita"
+                          className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
+                        >
+                          Berita
+                        </Link>
                       </li>
                     </ul>
                   </div>

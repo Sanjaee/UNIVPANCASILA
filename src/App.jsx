@@ -64,6 +64,7 @@ import KontenDuaForm from "./pages/backend/konten/KontenDuaForm";
 import KontenTigaForm from "./pages/backend/konten/KontenTigaForm";
 import KontenEmpatForm from "./pages/backend/konten/KontenEmpatForm";
 import BeritaForm from "./pages/backend/berita/BeritaForm";
+import Login from "./pages/backend/Login";
 
 const App = () => {
   return (
@@ -154,6 +155,7 @@ const App = () => {
         <Route path="/detail-13-4" element={<TradisiEmpat />} />
 
         {/* backend */}
+        <Route path="/backend" element={<Login />} />
         <Route path="/backend/navbar" element={<NavbarForm />} />
         <Route path="/backend/beranda" element={<BerandaForm />} />
         <Route path="/backend/konten-satu" element={<KontenSatuForm />} />

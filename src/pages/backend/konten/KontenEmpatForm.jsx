@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import NavbarBE from "../NavbarBE";
+import { useLogin } from "../useLogin";
 
 const KontenEmpatForm = () => {
+  useLogin();
   const [data, setData] = useState({
     image: "",
     title: "",
@@ -13,7 +16,9 @@ const KontenEmpatForm = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/konten-empat");
+        const response = await axios.get(
+          "http://localhost:8000/api/konten-empat"
+        );
         setData(response.data);
       } catch (error) {
         console.error("Failed to fetch data:", error);
@@ -38,29 +43,78 @@ const KontenEmpatForm = () => {
   };
 
   return (
-    <div className="container mx-auto p-8 bg-white rounded shadow-md">
-      <h2 className="text-2xl font-semibold mb-6">Update Konten Empat</h2>
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {Object.keys(data).map((key) => (
-          <div key={key}>
-            <label className="block text-gray-700 capitalize">{key.replace(/_/g, " ")}</label>
+    <>
+      <NavbarBE />
+      <div className="px-4   lg:p-8 mt-24   bg-white rounded shadow-md">
+        <h2 className="text-2xl font-semibold mb-6">Update Konten Empat</h2>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label className="block text-gray-700 capitalize">Image</label>
             <input
               type="text"
-              name={key}
-              value={data[key]}
+              name="image"
+              value={data.image}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <p className="font-bold">Result image :</p>
+            <img className="border w-80" src={data.image} alt="bg" />
+          </div>
+          <div>
+            <label className="block text-gray-700 capitalize">Title</label>
+            <input
+              type="text"
+              name="title"
+              value={data.title}
               onChange={handleChange}
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-        ))}
-        <button
-          type="submit"
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          Update
-        </button>
-      </form>
-    </div>
+          <div>
+            <label className="block text-gray-700 capitalize">
+              Deskripsi Satu
+            </label>
+            <input
+              type="text"
+              name="deskripsi_satu"
+              value={data.deskripsi_satu}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700 capitalize">
+              Deskripsi Dua
+            </label>
+            <input
+              type="text"
+              name="deskripsi_dua"
+              value={data.deskripsi_dua}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div>
+            <label className="block text-gray-700 capitalize">
+              Deskripsi Tiga
+            </label>
+            <input
+              type="text"
+              name="deskripsi_tiga"
+              value={data.deskripsi_tiga}
+              onChange={handleChange}
+              className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <button
+            type="submit"
+            className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Update
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 
