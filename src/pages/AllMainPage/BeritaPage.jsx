@@ -14,7 +14,6 @@ const BeritaPage = () => {
       try {
         const response = await axios.get("http://localhost:8000/api/berita");
         setData(response.data);
-       
       } catch (error) {
         console.error("Failed to fetch data:", error);
       } finally {
@@ -34,10 +33,11 @@ const BeritaPage = () => {
     <>
       <Navbar />
       <div className="w-full justify-center flex items-center">
+        {/* Desktop */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          className="mt-48 max-w-screen-2xl  lg:flex hidden mx-10 pb-20 items-start"
+          className=" custom-1200:mt-48 custom-1000:mt-28 max-w-screen-2xl  lg:flex hidden mx-10 pb-20 items-start"
         >
           {/* grid 1 */}
           <div className="flex flex-col w-full justify-center items-center  ">
@@ -50,9 +50,10 @@ const BeritaPage = () => {
               </h1>
             </div>
             <img
-              className="mt-10 w-full h-[376px] object-cover"
+              className="mt-10 w-full lg:h-[376px] custom-1200:h-[476px] object-cover"
               src={data.image_berita}
               alt="bg"
+              loading="lazy"
             />
             {/* berita */}
             <div className="mt-10 text-[20px] flex flex-col">
@@ -88,6 +89,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
                   src={data.karir_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -105,6 +107,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
                   src={data.karir_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -122,6 +125,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
                   src={data.karir_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -147,6 +151,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
                   src={data.penghargaan_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -164,6 +169,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
                   src={data.penghargaan_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -181,6 +187,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
                   src={data.penghargaan_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -196,7 +203,7 @@ const BeritaPage = () => {
             <div className="border-2 boeder-[#ECECEC] w-full my-4  "></div>
             {/* berita */}
             <div className="flex flex-col w-full text-sm justify-start ">
-            <div className="w-full h-[50px] bg-[#DBA3D9] rounded-xl flex items-center justify-start ">
+              <div className="w-full h-[50px] bg-[#DBA3D9] rounded-xl flex items-center justify-start ">
                 <h1 className="ml-5 text-white text-[20px] font-bold">
                   Berita Lainnya
                 </h1>
@@ -206,6 +213,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -222,6 +230,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -238,6 +247,7 @@ const BeritaPage = () => {
                   className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -252,6 +262,7 @@ const BeritaPage = () => {
           </div>
         </motion.div>
 
+        {/* mobile */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -271,9 +282,10 @@ const BeritaPage = () => {
               className="mt-10 w-full custom-300:h-[236px] sm:h-[376px] object-cover"
               src={data.image_berita}
               alt="bg"
+              loading="lazy"
             />
             {/* berita */}
-            <div className="mt-10 text-[20px] flex flex-col">
+            <div className="mt-10 text-sm flex flex-col">
               <p>
                 <span className="font-bold">{data.title_satu}</span> –
                 {data.deskripsi_satu}
@@ -303,15 +315,16 @@ const BeritaPage = () => {
               {/* karir 1 */}
               <div className="flex items-start mt-10 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg "
                   src={data.karir_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
-                  <p className="font-semibold line-clamp-2">
+                  <p className="font-semibold text-sm line-clamp-2">
                     {data.karir_title_satu}
                   </p>
-                  <p className="text-[15px] line-clamp-3 mt-1 text-[#FF8ADE]">
+                  <p className="text-sm line-clamp-3 mt-1 text-[#FF8ADE]">
                     {data.karir_deskripsi_satu}
                   </p>
                 </div>
@@ -320,9 +333,10 @@ const BeritaPage = () => {
               {/* karir 2 */}
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg "
                   src={data.karir_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -337,9 +351,10 @@ const BeritaPage = () => {
               {/* karir 3 */}
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg"
                   src={data.karir_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -362,9 +377,10 @@ const BeritaPage = () => {
               {/* Penghargaan 1 */}
               <div className="flex items-start mt-10 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg "
                   src={data.penghargaan_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -379,9 +395,10 @@ const BeritaPage = () => {
               {/* Penghargaan 2 */}
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg "
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg "
                   src={data.penghargaan_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -396,9 +413,10 @@ const BeritaPage = () => {
               {/* Penghargaan 3 */}
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg"
                   src={data.penghargaan_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -414,16 +432,17 @@ const BeritaPage = () => {
             <div className="border-2 boeder-[#ECECEC] w-full my-4  "></div>
             {/* berita */}
             <div className="flex flex-col w-full text-sm justify-start ">
-            <div className="w-full h-[50px] bg-[#DBA3D9] rounded-xl flex items-center justify-start ">
+              <div className="w-full h-[50px] bg-[#DBA3D9] rounded-xl flex items-center justify-start ">
                 <h1 className="ml-5 text-white text-[20px] font-bold">
                   Berita Lainnya
                 </h1>
               </div>
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_satu}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -437,9 +456,10 @@ const BeritaPage = () => {
 
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_dua}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">
@@ -453,9 +473,10 @@ const BeritaPage = () => {
 
               <div className="flex items-start mt-7 ">
                 <img
-                  className="w-full max-w-[210px] h-[120px] object-cover rounded-lg"
+                  className="w-full max-w-[170px] h-[120px] object-cover rounded-lg"
                   src={data.berita_image_tiga}
                   alt="bg"
+                  loading="lazy"
                 />
                 <div className="ml-5">
                   <p className="font-semibold line-clamp-2">

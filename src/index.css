@@ -16,11 +16,26 @@ html {
   height: 883px; /* sesuai dengan tinggi gambar */
   width: 693px; /* sesuai dengan lebar gambar */
 }
+.background-1-mobile {
+  background-image: url("/bghp.png");
+  background-size: "cover",;
+  background-position: "center",;
+  height: 1200px;
+  width: 100%;
+}
 .background-2 {
   background-image: url("/bgberanda2.png");
   background-size: cover;
-  
+
   background-position: center;
   height: 128px; /* sesuai dengan tinggi gambar */
+  width: 100%; /* sesuai dengan lebar gambar */
+}
+.background-2-mobile {
+  background-image: url("/bgberanda2.png");
+  background-size: cover;
+
+  background-position: center;
+  height: 50px; /* sesuai dengan tinggi gambar */
   width: 100%; /* sesuai dengan lebar gambar */
 }

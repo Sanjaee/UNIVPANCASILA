@@ -58,7 +58,7 @@ const KontenEmpatForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.image} alt="bg" />
+            <img className="border w-80" loading="lazy" src={data.image} alt="bg" />
           </div>
           <div>
             <label className="block text-gray-700 capitalize">Title</label>

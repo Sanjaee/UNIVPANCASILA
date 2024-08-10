@@ -117,7 +117,12 @@ const BeritaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.image_berita} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.image_berita}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -252,7 +257,12 @@ const BeritaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.karir_image_satu} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.karir_image_satu}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -290,7 +300,12 @@ const BeritaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.karir_image_dua} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.karir_image_dua}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -328,7 +343,12 @@ const BeritaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.karir_image_tiga} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.karir_image_tiga}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -368,6 +388,7 @@ const BeritaForm = () => {
             <p className="font-bold">Result image :</p>
             <img
               className="border w-80"
+              loading="lazy"
               src={data.penghargaan_image_satu}
               alt="bg"
             />
@@ -409,6 +430,7 @@ const BeritaForm = () => {
             />
             <p className="font-bold">Result image :</p>
             <img
+              loading="lazy"
               className="border w-80"
               src={data.penghargaan_image_dua}
               alt="bg"
@@ -451,6 +473,7 @@ const BeritaForm = () => {
             />
             <p className="font-bold">Result image :</p>
             <img
+              loading="lazy"
               className="border w-80"
               src={data.penghargaan_image_tiga}
               alt="bg"
@@ -493,6 +516,7 @@ const BeritaForm = () => {
             />
             <p className="font-bold">Result image :</p>
             <img
+              loading="lazy"
               className="border w-80"
               src={data.berita_image_satu}
               alt="bg"
@@ -534,7 +558,12 @@ const BeritaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.berita_image_dua} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.berita_image_dua}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -573,6 +602,7 @@ const BeritaForm = () => {
             />
             <p className="font-bold">Result image :</p>
             <img
+              loading="lazy"
               className="border w-80"
               src={data.berita_image_tiga}
               alt="bg"

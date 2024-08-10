@@ -24,14 +24,8 @@ const Main = () => {
       {/* Desktop */}
       <div
         id="main2"
-        style={{
-          backgroundImage: `url(${data.background_image_desktop})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "883px",
-          width: "693px",
-        }}
-        className="relative hidden mt-[500px] mb-[500px] w-full max-w-screen-2xl lg:flex flex-col justify-center items-center"
+      
+        className="relative background-1 hidden mt-[500px] mb-[500px] w-full max-w-screen-2xl lg:flex flex-col justify-center items-center"
       >
         <Link
           to="/berita"
@@ -41,6 +35,7 @@ const Main = () => {
             className="object-cover rounded-3xl custom-1200:w-[507px] custom-1000:w-[400px]"
             src={data.gambar_berita_satu}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_satu}
@@ -54,6 +49,7 @@ const Main = () => {
             className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px]"
             src={data.gambar_berita_dua}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_dua}
@@ -67,6 +63,7 @@ const Main = () => {
             className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px]"
             src={data.gambar_berita_tiga}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_tiga}
@@ -80,6 +77,7 @@ const Main = () => {
             className="object-cover rounded-3xl custom-1000:w-[400px] custom-1200:w-[507px]"
             src={data.gambar_berita_empat}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_empat}
@@ -93,14 +91,8 @@ const Main = () => {
       {/* Mobile */}
       <div
         
-        style={{
-          backgroundImage: `url(${data.background_image_mobile})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "1200px",
-          width: "100%",
-        }}
-        className="relative  flex custom-500:mt-[250px] custom-300:mt-[140px] mb-[400px] w-full max-w-screen-2xl lg:hidden flex-col justify-center items-center"
+    
+        className="relative background-1-mobile  flex custom-500:mt-[250px] custom-300:mt-[140px] mb-[400px] w-full max-w-screen-2xl lg:hidden flex-col justify-center items-center"
       >
         <Link
         
@@ -111,6 +103,7 @@ const Main = () => {
             className="w-full h-[200px]  object-cover rounded-xl"
             src={data.gambar_berita_satu}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_satu}
@@ -128,6 +121,7 @@ const Main = () => {
             className="w-full h-[200px]  object-cover rounded-xl"
             src={data.gambar_berita_dua}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_dua}
@@ -145,6 +139,7 @@ const Main = () => {
             className="w-full h-[200px]  object-cover rounded-xl"
             src={data.gambar_berita_tiga}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_tiga}
@@ -163,6 +158,7 @@ const Main = () => {
             className="w-full h-[200px]  object-cover rounded-xl"
             src={data.gambar_berita_empat}
             alt="bg"
+            loading="lazy"
           />
           <p className="mt-5 font-semibold text-[#000000] text-[15px]">
             {data.title_berita_empat}

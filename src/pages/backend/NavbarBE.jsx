@@ -102,7 +102,7 @@ const NavbarBE = () => {
       <div className="lg:hidden flex justify-end items-center fixed top-0 h-14 z-50 bg-gray-500 w-full px-4">
         <div className="flex items-center">
           <button onClick={toggleSidebar}>
-            <img className="w-10" src="/hamburger.png" alt="bg" />
+            <img className="w-10" loading="lazy" src="/hamburger.png" alt="bg" />
           </button>
           <AnimatePresence>
             {isSidebarOpen && (

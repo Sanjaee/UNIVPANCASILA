@@ -79,6 +79,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.background_image_desktop}
               alt="bg"
+              loading="lazy"
             />
           </div>
 
@@ -98,6 +99,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.background_image_mobile}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -116,6 +118,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_teks_slider}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -130,7 +133,12 @@ const BerandaForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.gambar_slider} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.gambar_slider}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700 capitalize">
@@ -148,6 +156,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_berita_satu}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -190,6 +199,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_berita_dua}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -232,6 +242,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_berita_tiga}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -274,6 +285,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_berita_empat}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>
@@ -325,6 +337,7 @@ const BerandaForm = () => {
             />
             <p className="font-bold">Result image :</p>
             <img
+              loading="lazy"
               className="border w-80"
               src={data.gambar_galery_satu}
               alt="bg"
@@ -358,6 +371,7 @@ const BerandaForm = () => {
               className="border w-80"
               src={data.gambar_galery_dua}
               alt="bg"
+              loading="lazy"
             />
           </div>
           <div>

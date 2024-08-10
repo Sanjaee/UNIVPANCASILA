@@ -4,7 +4,7 @@ import React from "react";
 const Loading = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-300">
-      <img className="w-60 mb-5" src="./load.png" alt="bg" />
+      <img className="w-60 mb-5" loading="lazy" src="./load.png" alt="bg" />
       <svg
         className="animate-spin h-10 w-10 mr-5 text-gray-800"
         xmlns="http://www.w3.org/2000/svg"

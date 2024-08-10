@@ -5,25 +5,12 @@ import SearchComponent from "./SearchComponent";
 import SearchComponentMobile from "./SearchComponentMobile";
 
 const Navbar = () => {
-  const [navbarData, setNavbarData] = useState(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    const fetchNavbarData = async () => {
-      try {
-        const response = await fetch("http://localhost:8000/api/navbar");
-        const data = await response.json();
-        setNavbarData(data);
-      } catch (error) {
-        console.error("Failed to fetch navbar data:", error);
-      }
-    };
 
-    fetchNavbarData();
-  }, []);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -37,10 +24,6 @@ const Navbar = () => {
     setIsSearchOpen(!isSearchOpen);
   };
 
-  if (!navbarData) {
-    return null; // or a loading spinner
-  }
-
   return (
     <>
       {/* Desktop */}
@@ -50,13 +33,15 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             className="custom-1200:w-16 custom-1000:w-10"
-            src={navbarData.logo_satu}
+            src="/LOGO.png"
             alt="Logo"
+            loading="lazy"
           />
           <img
             className="custom-1200:w-40 custom-1000:w-40 ml-2"
-            src={navbarData.logo_dua}
+            src="/LOGONAMA.png"
             alt="Logo Nama"
+            loading="lazy"
           />
         </div>
 
@@ -101,7 +86,7 @@ const Navbar = () => {
                           to="/konten-satu"
                           className={`block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200`}
                         >
-                          {navbarData.text_conten_satu}
+                          Pancasila
                         </Link>
                       </li>
                       <li>
@@ -109,7 +94,7 @@ const Navbar = () => {
                           to="/konten-dua"
                           className={`block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200`}
                         >
-                          {navbarData.text_conten_dua}
+                          UUD 1945
                         </Link>
                       </li>
                       <li>
@@ -117,7 +102,7 @@ const Navbar = () => {
                           to="/konten-tiga"
                           className={`block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200`}
                         >
-                          {navbarData.text_conten_tiga}
+                          Bhinneka Tunggal Ika
                         </Link>
                       </li>
                       <li>
@@ -125,7 +110,7 @@ const Navbar = () => {
                           to="/konten-empat"
                           className={`block px-4 py-2 text-gray-800 hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200`}
                         >
-                          {navbarData.text_conten_empat}
+                          NKRI
                         </Link>
                       </li>
                     </ul>
@@ -160,17 +145,23 @@ const Navbar = () => {
       {/* Mobile */}
       <div className="lg:hidden flex justify-between items-center fixed top-0 h-14 z-50 bg-[#FF8ADE] w-full px-4">
         <Link to="/" className="flex items-center">
-          <img className="w-10" src={navbarData.logo_satu} alt="Logo" />
+          <img className="w-10" loading="lazy" src="/LOGO.png" alt="Logo" />
           <img
             className=" w-32 ml-2"
-            src={navbarData.logo_dua}
+            src="/LOGONAMA.png"
             alt="Logo Nama"
+            loading="lazy"
           />
         </Link>
 
         <div className="flex items-center">
           <button onClick={toggleSearch}>
-            <img className="w-6 mr-2" src="./kcinput.png" alt="bg" />
+            <img
+              loading="lazy"
+              className="w-6 mr-2"
+              src="./kcinput.png"
+              alt="bg"
+            />
           </button>
           <AnimatePresence>
             {isSearchOpen && (
@@ -194,7 +185,12 @@ const Navbar = () => {
             )}
           </AnimatePresence>
           <button onClick={toggleSidebar}>
-            <img className="w-10" src="./hamburger.png" alt="bg" />
+            <img
+              loading="lazy"
+              className="w-10"
+              src="./hamburger.png"
+              alt="bg"
+            />
           </button>
           <AnimatePresence>
             {isSidebarOpen && (
@@ -252,7 +248,7 @@ const Navbar = () => {
                                     to="/konten-satu"
                                     className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
                                   >
-                                    {navbarData.text_conten_satu}
+                                    Pancasila
                                   </Link>
                                 </li>
                                 <li>
@@ -260,7 +256,7 @@ const Navbar = () => {
                                     to="/konten-dua"
                                     className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
                                   >
-                                    {navbarData.text_conten_dua}
+                                    UUD 1945
                                   </Link>
                                 </li>
                                 <li>
@@ -268,7 +264,7 @@ const Navbar = () => {
                                     to="/konten-tiga"
                                     className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
                                   >
-                                    {navbarData.text_conten_tiga}
+                                    Bhinneka Tunggal Ika
                                   </Link>
                                 </li>
                                 <li>
@@ -276,7 +272,7 @@ const Navbar = () => {
                                     to="/konten-empat"
                                     className="block px-4 py-2 text-white hover:bg-[#FFCDF1] hover:text-[#FF8ADE] transition duration-200 w-full text-start"
                                   >
-                                    {navbarData.text_conten_empat}
+                                    NKRI
                                   </Link>
                                 </li>
                               </ul>

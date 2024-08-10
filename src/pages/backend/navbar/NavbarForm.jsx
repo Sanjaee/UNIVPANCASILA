@@ -48,7 +48,9 @@ const NavbarForm = () => {
         <h2 className="text-2xl font-semibold mb-6">Update Navbar</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block font-bold text-gray-700">1. Logo Satu</label>
+            <label className="block font-bold text-gray-700">
+              1. Logo Satu
+            </label>
             <input
               type="text"
               name="logo_satu"
@@ -57,7 +59,12 @@ const NavbarForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.logo_satu} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.logo_satu}
+              alt="bg"
+            />
           </div>
           <div>
             <label className="block font-bold text-gray-700">2. Logo Dua</label>
@@ -69,10 +76,17 @@ const NavbarForm = () => {
               className="w-full mt-1 p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <p className="font-bold">Result image :</p>
-            <img className="border w-80" src={data.logo_dua} alt="bg" />
+            <img
+              className="border w-80"
+              loading="lazy"
+              src={data.logo_dua}
+              alt="bg"
+            />
           </div>
           <div>
-            <label className="block font-bold text-gray-700">3. Text Content Satu</label>
+            <label className="block font-bold text-gray-700">
+              3. Text Content Satu
+            </label>
             <input
               type="text"
               name="text_conten_satu"
@@ -82,7 +96,9 @@ const NavbarForm = () => {
             />
           </div>
           <div>
-            <label className="block font-bold text-gray-700">4. Text Content Dua</label>
+            <label className="block font-bold text-gray-700">
+              4. Text Content Dua
+            </label>
             <input
               type="text"
               name="text_conten_dua"
@@ -92,7 +108,9 @@ const NavbarForm = () => {
             />
           </div>
           <div>
-            <label className="block font-bold text-gray-700">5. Text Content Tiga</label>
+            <label className="block font-bold text-gray-700">
+              5. Text Content Tiga
+            </label>
             <input
               type="text"
               name="text_conten_tiga"
@@ -102,7 +120,9 @@ const NavbarForm = () => {
             />
           </div>
           <div>
-            <label className="block font-bold text-gray-700">6. Text Content Empat</label>
+            <label className="block font-bold text-gray-700">
+              6. Text Content Empat
+            </label>
             <input
               type="text"
               name="text_conten_empat"

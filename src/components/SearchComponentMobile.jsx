@@ -31,6 +31,7 @@ function SearchComponentMobile() {
         <img
           src="./kcinput.png"
           alt="Search"
+          loading="lazy"
           className="absolute left-2 top-1/2 transform -translate-y-1/2 w-5 h-5"
         />
       </div>

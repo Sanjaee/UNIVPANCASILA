@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import axios from "axios";
 import Navbar from "../../components/Navbar";
 import Loading from "../../components/Loading";
 import { Link } from "react-router-dom";
@@ -8,25 +7,11 @@ import Footer from "../../components/Footer";
 
 const Pancasila = () => {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState({});
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "http://localhost:8000/api/konten-satu"
-        );
-        setData(response.data);
-      } catch (error) {
-        console.error("Failed to fetch data:", error);
-      } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 500); // Simulate loading time
-      }
-    };
-
-    fetchData();
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   }, []);
 
   if (loading) {
@@ -35,6 +20,7 @@ const Pancasila = () => {
 
   return (
     <>
+      {/* Desktop */}
       <Navbar />
       <div className="w-full justify-center lg:flex items-center hidden">
         <div className="mt-40 px-5 sm:px-10 flex flex-col text-[#000000] sm:flex-row sm:justify-between items-center">
@@ -43,9 +29,10 @@ const Pancasila = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              src={data.image}
+              src="garuda.png"
               className="max-h-[270.48px] w-full h-full max-w-[270.48px] object-cover"
               alt="logo"
+              loading="lazy"
             />
           </div>
           <motion.div
@@ -54,19 +41,37 @@ const Pancasila = () => {
             className="max-w-[866px] w-full sm:ml-10 mt-10 sm:mt-0"
           >
             <h1 className={`text-[40px] font-bold text-[#FF8ADE]`}>
-              {data.title}
+              Pancasila
             </h1>
             <div className="mt-5 text-[17px]">
-              <p>{data.deskripsi_satu}</p>
-              <p className="mt-5">{data.deskripsi_dua}</p>
+              <p>
+                Pancasila adalah dasar negara Indonesia. Nama ini terdiri dari
+                dua kata dari bahasa Sanskerta: पञ्च "pañca" berarti lima dan
+                शीला "śīla" berarti prinsip atau asas. Pancasila merupakan
+                rumusan dan pedoman kehidupan berbangsa dan bernegara bagi
+                seluruh rakyat Indonesia.
+              </p>
+              <p className="mt-5">
+                Lima ideologi utama penyusun Pancasila merupakan lima sila
+                Pancasila. Ideologi utama tersebut tercantum pada alinea keempat
+                dalam Pembukaan Undang-Undang Dasar 1945:
+              </p>
               <ol className="mt-5 list-decimal list-inside">
-                <li>{data.deskripsi_tiga}</li>
-                <li>{data.deskripsi_empat}</li>
-                <li>{data.deskripsi_lima}</li>
-                <li>{data.deskripsi_enam}</li>
-                <li>{data.deskripsi_tujuh}</li>
+                <li>Ketuhanan yang Maha Esa</li>
+                <li>Kemanusiaan yang adil dan beradab</li>
+                <li>Persatuan Indonesia</li>
+                <li>
+                  Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam
+                  permusyawaratan/perwakilan, serta
+                </li>
+                <li>Keadilan sosial bagi seluruh rakyat Indonesia</li>
               </ol>
-              <p className="mt-5">{data.deskripsi_delapan}</p>
+              <p className="mt-5">
+                Sekalipun terjadi perubahan isi dan urutan lima sila Pancasila
+                yang berlangsung dalam beberapa tahap selama masa perumusan
+                Pancasila pada tahun 1945, tanggal 1 Juni diperingati bersama
+                sebagai hari lahirnya Pancasila.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -87,28 +92,48 @@ const Pancasila = () => {
                 to="/detail-satu-1"
               >
                 <p className="text-[20px]">Menghormati Antar Agama</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-2"
               >
                 <p className="text-[20px]">Tidak Paksakan Kepercayaan</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-3"
               >
                 <p className="text-[20px]">Taat Beribadah</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-4"
               >
                 <p className="text-[20px]">Hidup Sederhana</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -131,7 +156,12 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Menjunjung Tinggi Nilai Kemanusiaan
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
@@ -140,21 +170,36 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Gemar Melakukan Kegiatan Kemanusiaan
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-dua-3"
               >
                 <p className="text-[20px]">Tenggang Rasa dan Tepa Selira</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-dua-4"
               >
                 <p className="text-[20px]">Saling Tolong Menolong</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -173,21 +218,36 @@ const Pancasila = () => {
                 to="/detail-tiga-1"
               >
                 <p className="text-[20px]">Cinta Tanah Air dan Bangsa</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tiga-2"
               >
                 <p className="text-[20px]">Bangga Sebagai Bangsa Indonesia</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tiga-3"
               >
                 <p className="text-[20px]">Berkorban untuk Bangsa dan Negara</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
@@ -196,7 +256,12 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Jaga Persatuan dan Kesatuan Bangsa
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -216,28 +281,48 @@ const Pancasila = () => {
                 to="/detail-empat-1"
               >
                 <p className="text-[20px]">Hormati Hasil Musyawarah</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-2"
               >
                 <p className="text-[20px]">Menjunjung Nilai Kebenaran</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-3"
               >
                 <p className="text-[20px]">Musyawarah dan Mufakat</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-4"
               >
                 <p className="text-[20px]">Tidak Paksakan Kehendak</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -255,28 +340,48 @@ const Pancasila = () => {
                 to="/detail-lima-1"
               >
                 <p className="text-[20px]">Adil Terhadap Sesama</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-2"
               >
                 <p className="text-[20px]">Hormati Hak Orang Lain</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-3"
               >
                 <p className="text-[20px]">Musyawarah dan Mufakat</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-4"
               >
                 <p className="text-[20px]">Bekerja Keras</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -296,9 +401,10 @@ const Pancasila = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              src={data.image}
+              src="garuda.png"
               className="max-h-[270.48px] w-full h-full max-w-[270.48px] object-cover"
               alt="logo"
+              loading="lazy"
             />
           </div>
           <motion.div
@@ -307,19 +413,37 @@ const Pancasila = () => {
             className="max-w-[866px] w-full mt-20 "
           >
             <h1 className={`text-[40px] font-bold text-[#FF8ADE]`}>
-              {data.title}
+              Pancasila
             </h1>
             <div className="mt-5 text-[17px]">
-              <p>{data.deskripsi_satu}</p>
-              <p className="mt-5">{data.deskripsi_dua}</p>
+              <p>
+                Pancasila adalah dasar negara Indonesia. Nama ini terdiri dari
+                dua kata dari bahasa Sanskerta: पञ्च "pañca" berarti lima dan
+                शीला "śīla" berarti prinsip atau asas. Pancasila merupakan
+                rumusan dan pedoman kehidupan berbangsa dan bernegara bagi
+                seluruh rakyat Indonesia.
+              </p>
+              <p className="mt-5">
+                Lima ideologi utama penyusun Pancasila merupakan lima sila
+                Pancasila. Ideologi utama tersebut tercantum pada alinea keempat
+                dalam Pembukaan Undang-Undang Dasar 1945:
+              </p>
               <ol className="mt-5 list-decimal list-inside">
-                <li>{data.deskripsi_tiga}</li>
-                <li>{data.deskripsi_empat}</li>
-                <li>{data.deskripsi_lima}</li>
-                <li>{data.deskripsi_enam}</li>
-                <li>{data.deskripsi_tujuh}</li>
+                <li>Ketuhanan yang Maha Esa</li>
+                <li>Kemanusiaan yang adil dan beradab</li>
+                <li>Persatuan Indonesia</li>
+                <li>
+                  Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam
+                  permusyawaratan/perwakilan, serta
+                </li>
+                <li>Keadilan sosial bagi seluruh rakyat Indonesia</li>
               </ol>
-              <p className="mt-5">{data.deskripsi_delapan}</p>
+              <p className="mt-5">
+                Sekalipun terjadi perubahan isi dan urutan lima sila Pancasila
+                yang berlangsung dalam beberapa tahap selama masa perumusan
+                Pancasila pada tahun 1945, tanggal 1 Juni diperingati bersama
+                sebagai hari lahirnya Pancasila.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -339,28 +463,48 @@ const Pancasila = () => {
                 to="/detail-satu-1"
               >
                 <p className="text-[20px]">Menghormati Antar Agama</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-2"
               >
                 <p className="text-[20px]">Tidak Paksakan Kepercayaan</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-3"
               >
                 <p className="text-[20px]">Taat Beribadah</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg  mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-satu-4"
               >
                 <p className="text-[20px]">Hidup Sederhana</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -383,7 +527,12 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Menjunjung Tinggi Nilai Kemanusiaan
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
@@ -392,21 +541,36 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Gemar Melakukan Kegiatan Kemanusiaan
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-dua-3"
               >
                 <p className="text-[20px]">Tenggang Rasa dan Tepa Selira</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-dua-4"
               >
                 <p className="text-[20px]">Saling Tolong Menolong</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -425,21 +589,36 @@ const Pancasila = () => {
                 to="/detail-tiga-1"
               >
                 <p className="text-[20px]">Cinta Tanah Air dan Bangsa</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tiga-2"
               >
                 <p className="text-[20px]">Bangga Sebagai Bangsa Indonesia</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-tiga-3"
               >
                 <p className="text-[20px]">Berkorban untuk Bangsa dan Negara</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
@@ -448,7 +627,12 @@ const Pancasila = () => {
                 <p className="text-[20px]">
                   Jaga Persatuan dan Kesatuan Bangsa
                 </p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -468,28 +652,48 @@ const Pancasila = () => {
                 to="/detail-empat-1"
               >
                 <p className="text-[20px]">Hormati Hasil Musyawarah</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-2"
               >
                 <p className="text-[20px]">Menjunjung Nilai Kebenaran</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-3"
               >
                 <p className="text-[20px]">Musyawarah dan Mufakat</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-empat-4"
               >
                 <p className="text-[20px]">Tidak Paksakan Kehendak</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
@@ -507,28 +711,48 @@ const Pancasila = () => {
                 to="/detail-lima-1"
               >
                 <p className="text-[20px]">Adil Terhadap Sesama</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-2"
               >
                 <p className="text-[20px]">Hormati Hak Orang Lain</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-3"
               >
                 <p className="text-[20px]">Musyawarah dan Mufakat</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
               <Link
                 className="shadow-lg mt-4 flex p-2 justify-between items-center px-6 border border-[#FFFFFF] rounded-xl"
                 to="/detail-lima-4"
               >
                 <p className="text-[20px]">Bekerja Keras</p>
-                <img className=" h-3" src="./arrow.png" alt="bg" />
+                <img
+                  className=" h-3"
+                  loading="lazy"
+                  src="./arrow.png"
+                  alt="bg"
+                />
               </Link>
             </div>
           </div>
